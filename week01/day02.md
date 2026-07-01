@@ -15,7 +15,7 @@ The real transformation is that AI agents are becoming active collaborators thro
 
 ## Connection to My Experience
 In my work, I have focused on helping partners successfully integrate APIs by providing documentation, guidance, and best practices.
-As AI agents become part of software development, partner enablement may evolve to support both developers and AI agents.
+As AI agents become part of software development, partner enablement may evolve to support both developers and AI agents.The biggest shift is not a specific AI product.
 
 ## Next
 Explore how AI agents can accelerate API integration, debugging, and partner enablement.
