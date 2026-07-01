@@ -1,5 +1,4 @@
 # Day 01 - First Impression of AI Development
-**Date:** 2026-06-30
 
 ## Key Takeaways
 - AI agents are becoming active members of software development teams.
