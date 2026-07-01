@@ -18,5 +18,11 @@ Today I realized that AI agents may also need clear guidance, just as human deve
 - How will partner enablement change as AI agents become more common?
 - Will AGENTS.md become a standard for software development?
 
-## Next Step
-Create the README and continue learning about Codex.
+## Fact
+I watched an introduction to Codex and learned about the role of `AGENTS.md`.
+
+## Insight
+It made me realize that writing guidance for AI agents is fundamentally similar to writing integration guides for human developers.
+
+## Next
+Learn more about best practices for `AGENTS.md` and how AI agents collaborate with developers.
