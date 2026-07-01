@@ -1,5 +1,7 @@
+
 # AI Platform Builder Bootcamp
-A hands-on learning journey to become an AI-assisted Platform Builder.
+> Documenting my journey to become an AI-assisted Platform Builder.
+A hands-on learning journey to explore AI-assisted software development, APIs, cloud technologies, and platform engineering.
 
 ## Why
 I created this repository to document my journey of learning AI-assisted software development and modern platform engineering.
