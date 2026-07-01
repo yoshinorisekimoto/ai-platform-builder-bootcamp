@@ -12,6 +12,12 @@ I created this repository to document my journey of learning AI-assisted softwar
 - APIs
 - AWS
 
+- ## Goals
+- Understand AI-assisted software development.
+- Learn how AI agents improve API integration and debugging.
+- Explore how AI changes partner enablement and platform strategy.
+- Build a public portfolio documenting my learning journey.
+
 ## Learning Journey
 ### Week 1
 - [Day 01 - First Impression of AI Development](week01/day01.md)
