@@ -11,3 +11,7 @@ I created this repository to document my journey of learning AI-assisted softwar
 - Python
 - APIs
 - AWS
+
+## Learning Journey
+### Week 1
+- [Day 01 - First Impression of AI Development](week01/day01.md)
