@@ -1,0 +1,22 @@
+# Day 01 - First Impression of AI Development
+**Date:** 2026-07-01
+
+## Today's Topic
+- Introduction to Codex
+- AI Development Workflow
+
+## What Changed My Thinking
+- AI is becoming a member of the development team, not just a coding assistant.
+- README.md is for humans, while AGENTS.md is for AI agents.
+- My experience creating Integration Guides may also be valuable in the AI era.
+
+## Connection to My Experience
+For over 10 years, I created API documentation and integration guides for partners.
+Today I realized that AI agents may also need clear guidance, just as human developers do.
+
+## Questions
+- How will partner enablement change as AI agents become more common?
+- Will AGENTS.md become a standard for software development?
+
+## Next Step
+Create the README and continue learning about Codex.
