@@ -1,5 +1,4 @@
 # Day 02 - AI Changes the Development Workflow
-**Date:** 2026-07-01  
 
 ## Today's Topic
 - AI-assisted Development Workflow
