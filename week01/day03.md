@@ -1,4 +1,4 @@
-Day 03 - Git as a Shared Knowledge Platform
+# Day 03 - Git as a Shared Knowledge Platform
 
 ## Insight
 The value of Git is not just version control.
