@@ -1,4 +1,4 @@
-# Day 04 - My First AI-Assisted Code Review
+# Day 04 - AI-Assisted Code Review
 
 ## Today's Topic
 - AI-assisted Debugging
