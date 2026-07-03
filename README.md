@@ -25,5 +25,5 @@ I created this repository to document my journey of learning AI-assisted softwar
 - [Day 01 - First Impression of AI Development](week01/day01.md)
 - [Day 02 - AI Changes the Development Workflow](week01/day02.md)
 - [Day 03 - Git as a Shared Knowledge Platform](week01/day03.md)
-
+- [Day 04 - AI-Assisted Code Review](week01/day04.md)
 
