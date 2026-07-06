@@ -1,4 +1,4 @@
-Day 05 - Choosing the Right AI for the Right Task
+# Day 05 - Choosing the Right AI for the Right Task
 
 ## Insight
 
