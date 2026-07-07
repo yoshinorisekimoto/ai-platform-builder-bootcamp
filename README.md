@@ -28,3 +28,4 @@ I created this repository to document my journey of learning AI-assisted softwar
 - [Day 04 - AI-Assisted Code Review](week01/day04.md)
 ### Week 2
 - [Day 05 - Choosing the Right AI for the Right Task](week02/day05.md)
+- [Day 06 - AI-Assisted API Troubleshooting](week02/day06.md)
