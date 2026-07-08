@@ -1,5 +1,9 @@
 # Day 07 - Understanding Partnership Roles Through AI
 
+## Objective
+As AI becomes a collaborative tool in technical work, I wanted to explore whether role-based prompting changes how AI reasons about the same problem.
+My goal was not to find the "best" answer, but to better understand the different responsibilities and decision-making styles across partnership-related roles.
+
 ## Today's Topic
 - Role-based prompting
 - How different partnership roles approach the same production issue
