@@ -29,3 +29,4 @@ I created this repository to document my journey of learning AI-assisted softwar
 ### Week 2
 - [Day 05 - Choosing the Right AI for the Right Task](week02/day05.md)
 - [Day 06 - AI-Assisted API Troubleshooting](week02/day06.md)
+- [Day 07 - AI Platform Builder Bootcamp](week02/day07.md)
