@@ -1,6 +1,28 @@
-# Day 08 - Designing Roles in an AI-Assisted Partner Organization
+# Day 08 - AI-Assisted Partnership Team Design
 
-## Insight
-This experiment showed that effective incident response is not just about technical expertise—it is about clearly defined responsibilities.
-Even when everyone works on the same issue, each role contributes different value based on its accountability.
-AI can help visualize these responsibilities and improve cross-functional collaboration.
+## Objective
+After learning that different partnership roles approach the same technical issue from different perspectives, I wanted to explore the next question:
+
+How can these roles work together as one effective response team?
+
+The goal of this experiment was to understand how AI designs collaboration across technical, product, and partnership functions during a production incident.
+## Experiment
+
+I presented the following production scenario to an AI:
+
+> A partner reports that API requests are returning HTTP 401 Unauthorized in production.
+
+I asked the AI to create an incident response plan using these roles:
+- Senior Partner Engineer
+- Technical Partner Manager
+- API Architect
+- Platform Partnerships Manager
+
+I then extended the experiment by asking how the response would change if a Product Partnerships Manager were included.
+I compared:
+
+- Each role's responsibilities
+- First actions
+- Required information
+- Expected outputs
+- How the roles collaborate as one team
