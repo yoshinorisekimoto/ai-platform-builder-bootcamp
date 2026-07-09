@@ -1,11 +1,13 @@
 # Day 08 - AI-Assisted Partnership Team Design
 
 ## Objective
+
 After learning that different partnership roles approach the same technical issue from different perspectives, I wanted to explore the next question:
 
-How can these roles work together as one effective response team?
+How can technical, platform, product, and partnership roles work together as one effective response team?
 
-The goal of this experiment was to understand how AI designs collaboration across technical, product, and partnership functions during a production incident.
+The goal of this experiment was to understand how AI designs collaboration across engineering, product, and partnership functions during a production incident, and how each role contributes to both immediate issue resolution and long-term partner success.
+
 ## Experiment
 
 I presented the following production scenario to an AI:
