@@ -1,5 +1,5 @@
 
-# AI Platform Builder Bootcamp
+# Learning how to design and manage AI-assisted organizations through practical experiments.
 > Documenting my journey to become an AI-assisted Platform Builder.
 A hands-on learning journey to explore AI-assisted software development, APIs, cloud technologies, and platform engineering.
 
