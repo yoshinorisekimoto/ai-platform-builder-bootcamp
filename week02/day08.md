@@ -1,4 +1,4 @@
-# Day 08 - AI-Assisted Partnership Team Design
+# Day 08 - Designing Cross-Functional Partnership Teams with AI
 
 ## Objective
 
