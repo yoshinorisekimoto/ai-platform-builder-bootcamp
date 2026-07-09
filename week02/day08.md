@@ -27,3 +27,9 @@ For each role, I compared:
 - Expected output
 
 Finally, I asked the AI to explain how these roles should collaborate as one cross-functional response team during a production incident.
+
+## Future Perspective
+This experiment changed how I think about AI.
+Instead of treating AI as a single assistant, I began to think of AI as a team of specialized roles working toward a common goal.
+
+In the future, I believe individual contributors will increasingly design, coordinate, and manage AI teams rather than performing every task themselves.
