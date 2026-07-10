@@ -5,10 +5,10 @@ Explore how people can effectively design and manage multiple AI roles working t
 The objective is to understand how to assign responsibilities, coordinate outputs, and make informed decisions while using AI as a team of specialized collaborators.
 
 ## Experiment
-Scenario
+### Scenario
 A partner reports that API requests are returning HTTP 401 Unauthorized in production.
 
-Task
+###　Task
 Design an AI-assisted response workflow for this incident.
 
 The workflow should include the following roles:
