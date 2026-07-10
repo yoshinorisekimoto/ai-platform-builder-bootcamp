@@ -36,3 +36,15 @@ The next steps are:
 2. Test it with realistic incident scenarios.
 3. Refine the workflow based on the results.
 4. Evaluate whether it is practical for real-world partner operations.
+
+## Roadmap
+This experiment focuses on the concept phase.
+
+The long-term goal is to evolve this workflow through:
+- Concept
+- Implementation
+- Test
+- Improve
+- Production
+
+Rather than stopping at prompt design, I want to validate whether AI-assisted workflows can be applied to real-world partner operations.
