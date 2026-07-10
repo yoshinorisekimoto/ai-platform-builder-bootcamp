@@ -8,7 +8,7 @@ The objective is to understand how to assign responsibilities, coordinate output
 ### Scenario
 A partner reports that API requests are returning HTTP 401 Unauthorized in production.
 
-###　Task
+### Task
 Design an AI-assisted response workflow for this incident.
 
 The workflow should include the following roles:
