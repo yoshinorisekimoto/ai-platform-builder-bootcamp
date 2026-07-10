@@ -31,3 +31,6 @@ I created this repository to document my journey of learning AI-assisted softwar
 - [Day 06 - AI-Assisted API Troubleshooting](week02/day06.md)
 - [Day 07 - AI Platform Builder Bootcamp](week02/day07.md)
 - [Day 08 - Designing Cross-Functional Partnership Teams with AI](week02/day08.md)
+- [Day 09 - Day 09 - Managing an AI Team](week02/day09.md)
+
+
