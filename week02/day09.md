@@ -5,22 +5,25 @@ Explore how people can effectively design and manage multiple AI roles working t
 The objective is to understand how to assign responsibilities, coordinate outputs, and make informed decisions while using AI as a team of specialized collaborators.
 
 ## Experiment
+Scenario
+
 A partner reports that API requests are returning HTTP 401 Unauthorized in production.
 
-You are the team lead.
+Task
+Design an AI-assisted response workflow for this incident.
 
-Your AI team consists of:
+The workflow should include the following roles:
 - Senior Partner Engineer
 - Technical Partner Manager
 - API Architect
 - Platform Partnerships Manager
 - Product Partnerships Manager
 
-For each role:
-1. What task would you assign?
-2. What output would you expect?
-3. Which tasks can be done in parallel?
-4. Which task depends on another?
-5. At what points should a human make the final decision?
+For each role, explain:
+1. Primary responsibility
+2. Tasks assigned
+3. Expected outputs
+4. Dependencies on other roles
+5. Decision points requiring human judgment
 
-Finally, create a simple workflow showing how the team collaborates from incident detection to resolution.
+Finally, illustrate how these roles collaborate from incident detection to resolution.
