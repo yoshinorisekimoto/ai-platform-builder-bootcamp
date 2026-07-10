@@ -27,3 +27,12 @@ For each role, explain:
 
 Finally, illustrate how these roles collaborate from incident detection to resolution.
 If one person managed all of these AI roles, what skills would become the most important?
+
+## Next Phase
+This workflow is currently a conceptual design.
+
+The next steps are:
+1. Implement the workflow using AI agents and prompts.
+2. Test it with realistic incident scenarios.
+3. Refine the workflow based on the results.
+4. Evaluate whether it is practical for real-world partner operations.
