@@ -6,7 +6,6 @@ The objective is to understand how to assign responsibilities, coordinate output
 
 ## Experiment
 Scenario
-
 A partner reports that API requests are returning HTTP 401 Unauthorized in production.
 
 Task
@@ -27,3 +26,4 @@ For each role, explain:
 5. Decision points requiring human judgment
 
 Finally, illustrate how these roles collaborate from incident detection to resolution.
+If one person managed all of these AI roles, what skills would become the most important?
