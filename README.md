@@ -34,5 +34,6 @@ I created this repository to document my journey of learning AI-assisted softwar
 - [Day 09 - Day 09 - Managing an AI Team](week02/day09.md)
 ### Week 3
 - [Day 10 - Executing a Manual AI Role Workflow](week03/day10.md)
+- [Day 11 - Automating AI Role Handoffs](week03/day11.md)
 
 
