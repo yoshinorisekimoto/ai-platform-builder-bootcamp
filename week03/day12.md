@@ -46,7 +46,5 @@ The major improvement came from changing the workflow architecture:
 Instead of asking the Validator to be more intelligent, I reduced its freedom and introduced explicit evidence rules.
 
 ## Next
-
 Add recommendation controls and human approval gates.
-
 Each recommendation should include supporting evidence, risk, and whether human approval is required before execution.
