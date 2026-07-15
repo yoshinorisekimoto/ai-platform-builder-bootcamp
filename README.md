@@ -35,5 +35,4 @@ I created this repository to document my journey of learning AI-assisted softwar
 ### Week 3
 - [Day 10 - Executing a Manual AI Role Workflow](week03/day10.md)
 - [Day 11 - Automating AI Role Handoffs](week03/day11.md)
-
-
+- [Day 12 - Constraining AI with Evidence Controls](week03/day12.md)
