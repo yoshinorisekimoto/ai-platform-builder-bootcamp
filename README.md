@@ -1,24 +1,29 @@
 # Learning how to design and manage AI-assisted organizations through practical experiments.
 
-> Documenting my journey to become an AI-assisted Platform Builder.
-A hands-on learning journey to explore AI-assisted software development, APIs, cloud technologies, and platform engineering.
+Building AI-assisted frameworks for platform partnerships, integration architecture, and ecosystem operations.
+
+Building reusable frameworks for AI-assisted platform partnerships, partner operations, API integration, and ecosystem design.
+This repository documents my journey from learning AI-assisted development to designing practical frameworks that improve partner onboarding, integration workflows, and AI-supported platform operations.
 
 ## Why
-I created this repository to document my journey of learning AI-assisted software development and modern platform engineering.
+I created this repository to explore how AI can support platform organizations beyond software development.
+Rather than focusing only on coding, I experiment with AI-assisted workflows, integration architecture, evidence-based decision making, and reusable operating models that can be applied to real platform ecosystems.
 
 ## Topics
-- AI Development Workflow
-- Codex
-- GitHub
+- AI Agent Workflows
+- Platform Partnerships
+- API Integration
+- Partner Operations
+- AI Governance
 - Python
-- APIs
+- GitHub
 - AWS
 
 ## Goals
-- Understand AI-assisted software development.
-- Learn how AI agents improve API integration and debugging.
-- Explore how AI changes partner enablement and platform strategy.
-- Build a public portfolio documenting my learning journey.
+- Design AI-assisted operational workflows.
+- Build reusable frameworks for partner ecosystems and API integrations.
+- Explore integration architecture using APIs and cloud technologies.
+- Develop public portfolio projects demonstrating platform design and AI governance.
 
 ## Learning Journey
 ### Week 1
