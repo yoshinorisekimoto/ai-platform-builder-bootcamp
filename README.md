@@ -37,3 +37,7 @@ I created this repository to document my journey of learning AI-assisted softwar
 - [Day 11 - Automating AI Role Handoffs](week03/day11.md)
 - [Day 12 - Constraining AI with Evidence Controls](week03/day12.md)
 - [Day 13 - Controlling AI Recommendations with Human Approval Gates](week03/day13.md)
+
+・・・・
+
+## projects/ai-assisted-partner-operations/README.md
