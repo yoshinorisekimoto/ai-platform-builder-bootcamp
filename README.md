@@ -1,17 +1,8 @@
-# Building reusable frameworks for AI-assisted platform partnerships, integration architecture, and ecosystem operations.
-(Learning → Building → Reusable Assets)
-
-This repository documents the design, implementation, and continuous improvement of practical AI-assisted workflows for partner ecosystems, API integrations, and platform operations.
-
-Building AI-assisted frameworks for platform partnerships, integration architecture, and ecosystem operations.
-
+# AI Platform Builder Bootcamp
 Building reusable frameworks for AI-assisted platform partnerships, partner operations, API integration, and ecosystem design.
-This repository documents my journey from learning AI-assisted development to designing practical frameworks that improve partner onboarding, integration workflows, and AI-supported platform operations.
 
 ## Why
-This repository serves two purposes:
-- Document my continuous learning.
-- Build reusable assets that demonstrate platform design, partner operations, and AI-assisted workflows.
+This repository documents both my continuous learning and the development of reusable assets for platform design, partner operations, and AI-assisted workflows.
 
 ## Topics
 - AI Agent Workflows
