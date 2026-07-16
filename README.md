@@ -41,3 +41,4 @@ I created this repository to document my journey of learning AI-assisted softwar
 ・・・・
 
 ## projects/ai-assisted-partner-operations/README.md
+https://github.com/yoshinorisekimoto/ai-platform-builder-bootcamp/tree/main/projects/ai-assisted-partner-operations
