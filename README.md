@@ -40,6 +40,10 @@ This repository documents both my continuous learning and the development of reu
 - [Day 13 - Controlling AI Recommendations with Human Approval Gates](week03/day13.md)
 
 ・・・・
+## Featured Projects
 
-## projects/ai-assisted-partner-operations/README.md
-https://github.com/yoshinorisekimoto/ai-platform-builder-bootcamp/tree/main/projects/ai-assisted-partner-operations
+🚧 Under Development
+
+### AI-assisted Partner Operations
+Designing reusable AI-assisted workflows for partner operations, evidence validation, and human approval gates.
+➡️ [View Project](projects/ai-assisted-partner-operations/)
