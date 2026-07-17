@@ -23,7 +23,7 @@ python workflow.py scenario.json
 
 ## Safeguards Preserved
 
-- Structured role outputs through a strict JSON schema
+- structured role outputs through a strict JSON schema
 - deterministic evidence validation
 - exact-match confirmed fact validation
 - hypothesis promotion checks
