@@ -38,6 +38,7 @@ This repository documents both my continuous learning and the development of reu
 - [Day 11 - Automating AI Role Handoffs](week03/day11.md)
 - [Day 12 - Constraining AI with Evidence Controls](week03/day12.md)
 - [Day 13 - Controlling AI Recommendations with Human Approval Gates](week03/day13.md)
+- [Day 14 - Reusable AI-Assisted Partner Operations Package](week03/day14.md)
 
 ・・・・
 ## Featured Projects
