@@ -1,33 +1,51 @@
-# Day 14 — Packaging an AI Workflow as a Reusable Project
+# Day 14: Reusable AI-Assisted Partner Operations Package
 
-## Objective
-Convert the Day10–13 prototype into a reusable project structure.
+## What Changed
 
-## What I Built
-- Moved the workflow into the project directory
-- Separated incident data from workflow logic
-- Added a reusable JSON scenario input
-- Added dependency documentation
-- Preserved evidence validation and human approval controls
+Packaged the latest Day10-13 sequential role workflow into a reusable project:
 
-## Architecture Improvement
+```text
+projects/ai-assisted-partner-operations/
+```
 
-Before:
-Hard-coded incident  
-→ AI roles  
-→ Validator
+The workflow now separates the HTTP 401 incident scenario from the Python code and accepts a scenario file at runtime:
 
-After:
-Scenario JSON  
-→ Reusable workflow  
-→ Structured role outputs  
-→ Evidence validation  
-→ Recommendation validation  
-→ Human approval gate
+```bash
+python workflow.py scenario.json
+```
 
-## Why This Matters
-Separating workflow logic from incident data makes the system reusable across different partner-operation scenarios.
+## Files Added
 
-## Next Step
+- `projects/ai-assisted-partner-operations/workflow.py`
+- `projects/ai-assisted-partner-operations/scenario.json`
+- `projects/ai-assisted-partner-operations/requirements.txt`
+- `projects/ai-assisted-partner-operations/outputs/sample_output.json`
 
-Add a second incident scenario to test whether the workflow is truly reusable.
+## Safeguards Preserved
+
+- Structured role outputs through a strict JSON schema
+- deterministic evidence validation
+- exact-match confirmed fact validation
+- hypothesis promotion checks
+- recommendation evidence validation
+- provisional marking for hypothesis-only recommendations
+- human approval queue for high-risk or irreversible actions
+- no action execution capability
+
+## Scenario Separation
+
+The incident description and initial evidence now live in `scenario.json`.
+
+The scenario file contains:
+
+- `description`
+- `confirmed_facts`
+- `hypotheses`
+- `unknowns`
+- `evidence_sources`
+
+## Limitations
+
+The workflow still requires `OPENAI_API_KEY` for live role generation.
+
+The sample output is sanitized and illustrative. It is not produced by a live incident system and does not execute or approve any operational action.
