@@ -1,5 +1,6 @@
 # AI-Assisted Partner Operations
 
+This project demonstrates how a single AI-assisted workflow can process multiple API incident scenarios by separating workflow logic from scenario definitions.
 A reusable Python prototype demonstrating a safe, structured AI-assisted workflow for API and partner incident analysis.
 
 This project explores how Large Language Models (LLMs) can support technical investigation while maintaining deterministic validation, human approval, and execution safeguards.
@@ -23,7 +24,7 @@ This project explores how Large Language Models (LLMs) can support technical inv
 
 The same workflow can process multiple incident types by changing only the scenario input.
 
-Current examples include:
+Currently supported scenarios include:
 
 - HTTP 401 Unauthorized
 - API Timeout
@@ -94,12 +95,11 @@ All execution remains outside the scope of this prototype.
 
 Possible future enhancements include:
 
-- reusable validation policy modules
-- configurable workflow pipelines
-- scenario categorization
-- richer structured outputs
-- evaluation and testing framework
-- integration with additional LLM providers
+- reusable validator modules
+- configurable workflow policies
+- additional incident categories
+- automated evaluation framework
+- multi-model support
 
 ---
 
@@ -108,3 +108,13 @@ Possible future enhancements include:
 This repository is part of my AI Platform Builder Bootcamp.
 
 The focus is not only learning Python and LLM APIs, but also applying platform thinking to build reusable, safe, and human-centered AI workflows inspired by real-world partner operations.
+
+## Design Principle
+
+Separate workflow logic from business scenarios.
+
+Keep AI outputs structured and verifiable.
+
+Require human approval before operational actions.
+
+Favor reusable platform components over one-off automations.
