@@ -34,13 +34,13 @@ This mirrors a common platform engineering principle:
 - STOPPED_BEFORE_EXECUTION safeguard
 - No action execution capability
 
-## Explain Like I'm 13
+## How It Works
 
-Yesterday, I separated the "problem sheet" from the "machine."
+The workflow logic remains unchanged.
 
-Today, I created four different problem sheets.
+Each incident is defined in a separate JSON scenario file, and the same `workflow.py` processes all scenarios.
 
-Now the same machine can solve different problems without being rebuilt.
+This makes it possible to support new incident types by adding standardized inputs rather than modifying the core application logic.
 
 ## Human Review Points
 
