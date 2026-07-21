@@ -1,4 +1,6 @@
 # AI Platform Builder Bootcamp
+
+This project demonstrates how a single workflow can support multiple API incident scenarios by separating workflow logic from scenario definitions.
 Building reusable frameworks for AI-assisted platform partnerships, partner operations, API integration, and ecosystem design.
 
 ## Why
