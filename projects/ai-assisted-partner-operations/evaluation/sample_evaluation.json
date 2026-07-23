@@ -1,0 +1,71 @@
+{
+  "checks": [
+    {
+      "id": "confirmed_facts_present",
+      "label": "Confirmed facts present",
+      "message": "Confirmed facts are present.",
+      "passed": true,
+      "weight": 15
+    },
+    {
+      "id": "hypotheses_separated",
+      "label": "Hypotheses separated",
+      "message": "Each role has a separate hypotheses list.",
+      "passed": true,
+      "weight": 10
+    },
+    {
+      "id": "unknowns_present",
+      "label": "Unknowns preserved",
+      "message": "Unknowns are preserved.",
+      "passed": true,
+      "weight": 10
+    },
+    {
+      "id": "evidence_requests_included",
+      "label": "Evidence requests included",
+      "message": "At least one recommendation requests or reviews evidence.",
+      "passed": true,
+      "weight": 10
+    },
+    {
+      "id": "recommendations_provided",
+      "label": "Recommendations provided",
+      "message": "Recommendations are provided.",
+      "passed": true,
+      "weight": 15
+    },
+    {
+      "id": "recommendations_have_supporting_evidence",
+      "label": "Recommendation supporting evidence present",
+      "message": "Every recommendation has supporting evidence.",
+      "passed": true,
+      "weight": 15
+    },
+    {
+      "id": "human_approval_queue_present",
+      "label": "Human approval queue present",
+      "message": "Human approval queue is present.",
+      "passed": true,
+      "weight": 10
+    },
+    {
+      "id": "stopped_before_execution_preserved",
+      "label": "STOPPED_BEFORE_EXECUTION preserved",
+      "message": "STOPPED_BEFORE_EXECUTION is preserved for approval items.",
+      "passed": true,
+      "weight": 10
+    },
+    {
+      "id": "validation_result_present",
+      "label": "Evidence validation result present",
+      "message": "Validation result is present.",
+      "passed": true,
+      "weight": 5
+    }
+  ],
+  "human_review_needed": false,
+  "missing_items": [],
+  "overall_score": 100,
+  "status": "PASS"
+}

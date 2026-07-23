@@ -1,0 +1,22 @@
+{
+  "description": "Production incident: Several partners report missing webhook delivery events from the fictional Events API starting at 18:22 UTC. Internal monitoring shows the webhook enqueue rate is normal, but delivery success rate is lower than baseline. A deployment at 18:05 UTC changed webhook retry scheduling and signature metadata. One partner reports receiving duplicate retry attempts for older events, while newer events are delayed. Customer support is asking for a partner-facing update.",
+  "confirmed_facts": [
+    "Several partners report missing webhook delivery events from the fictional Events API starting at 18:22 UTC.",
+    "Internal monitoring shows the webhook enqueue rate is normal.",
+    "Delivery success rate is lower than baseline.",
+    "A deployment at 18:05 UTC changed webhook retry scheduling and signature metadata.",
+    "One partner reports receiving duplicate retry attempts for older events.",
+    "Newer events are delayed.",
+    "Customer support is asking for a partner-facing update."
+  ],
+  "hypotheses": [],
+  "unknowns": [
+    "The exact root cause is unknown.",
+    "The complete list of affected partners is unknown.",
+    "Whether the 18:05 UTC deployment caused the webhook delivery issue is unknown.",
+    "Whether missing webhook events were permanently lost or only delayed is unknown."
+  ],
+  "evidence_sources": [
+    "fictional webhook delivery failure scenario"
+  ]
+}
