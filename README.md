@@ -41,7 +41,9 @@ This repository documents both my continuous learning and the development of reu
 - [Day 12 - Constraining AI with Evidence Controls](week03/day12.md)
 - [Day 13 - Controlling AI Recommendations with Human Approval Gates](week03/day13.md)
 - [Day 14 - Reusable AI-Assisted Partner Operations Package](week03/day14.md)
+### Week 4
 - [Day 15 - Reusable Multi-Scenario Incident Workflow](week04/day15.md)
+- [Day 16 -  Deterministic Quality Evaluation](week04/day16.md)
 
 ## Featured Projects
 
