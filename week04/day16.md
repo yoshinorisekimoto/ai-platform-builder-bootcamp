@@ -33,15 +33,19 @@ Each check has a configurable weight defined in:
 
 ```text
 evaluation/evaluation_criteria.json
+```
 
 The evaluator then produces:
 
-Overall score
-PASS or FAIL status
-Individual check results
-Missing items
-Human review requirement
-Project Additions
+- Overall score
+- PASS or FAIL status
+- Individual check results
+- Missing items
+- Human review requirement
+
+## Project Additions
+
+```text
 ai-assisted-partner-operations/
 ├── evaluator.py
 ├── evaluation/
@@ -50,26 +54,36 @@ ai-assisted-partner-operations/
 ├── workflow.py
 ├── scenarios/
 └── outputs/
-Example Usage
+```
+
+## Example Usage
+
+```bash
 python evaluator.py outputs/sample_output.json
+```
 
 Using an explicit criteria file:
 
+```bash
 python evaluator.py \
   outputs/sample_output.json \
   evaluation/evaluation_criteria.json
-Sample Result
+```
+
+## Sample Result
+
+```json
 {
   "overall_score": 100,
   "status": "PASS",
   "human_review_needed": false
 }
+```
 
 The score indicates that the sample output satisfied all configured structural and safety checks.
 
 It does not mean that the technical analysis is guaranteed to be semantically correct.
 
-Safeguards Preserved
 Structured Outputs
 Confirmed Facts and Hypotheses separation
 Deterministic evidence validation
