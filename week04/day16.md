@@ -64,17 +64,17 @@ Using an explicit criteria file:
 
 ```bash
 python evaluator.py \
-  outputs/sample_output.json \
-  evaluation/evaluation_criteria.json
+outputs/sample_output.json \
+evaluation/evaluation_criteria.json
 ```
 
 ## Sample Result
 
 ```json
 {
-  "overall_score": 100,
-  "status": "PASS",
-  "human_review_needed": false
+"overall_score": 100,
+"status": "PASS",
+"human_review_needed": false
 }
 ```
 
@@ -98,13 +98,13 @@ It does not mean that the technical analysis is guaranteed to be semantically co
 
 ```text
 Saved Workflow Output
-        ↓
+      ↓
 Deterministic Evaluator
-        ↓
+      ↓
 Configurable Rules and Weights
-        ↓
+      ↓
 Score, Status, Missing Items
-        ↓
+      ↓
 Human Review
 ```
 
@@ -137,9 +137,9 @@ Day16 adds a deterministic quality gate.
 
 ```text
 Reusable Workflow
-        +
+      +
 Deterministic Quality Gate
-        +
+      +
 Human Review
 ```
 
