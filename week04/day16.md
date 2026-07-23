@@ -31,9 +31,7 @@ Example checks include:
 
 Each check has a configurable weight defined in:
 
-```text
-evaluation/evaluation_criteria.json
-```
+`evaluation/evaluation_criteria.json`
 
 The evaluator then produces:
 
