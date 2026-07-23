@@ -2,7 +2,10 @@
 
 Run:
     export OPENAI_API_KEY="..."
-    python workflow.py scenario.json
+    python workflow.py scenarios/http401.json
+    python workflow.py scenarios/api_timeout.json
+    python workflow.py scenarios/webhook_failure.json
+    python workflow.py scenarios/rate_limit.json
 
 Optional:
     export OPENAI_MODEL="gpt-4.1-mini"
