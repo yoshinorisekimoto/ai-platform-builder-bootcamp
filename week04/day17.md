@@ -49,17 +49,17 @@ Today I built a local AI-assisted development environment using VS Code, Git, Gi
 
 ---
 
-## Explain Like I'm 13
+## Plain-English Summary
 
-Think of your computer as your own workshop.
+A local development environment is your own workspace for building and testing software before sharing it with others.
 
-- VS Code is your workbench.
-- Git remembers every change you make.
-- GitHub stores your work online.
-- GitHub Desktop helps you use Git without typing many commands.
-- Codex acts like an AI teammate that helps you write and review code.
+VS Code is used for editing files.
+Git tracks changes.
+GitHub stores the project online.
+GitHub Desktop makes Git easier to use.
+Codex helps generate and review code.
 
-Together, they create a safe environment for building software.
+Together, these tools create a simple and reliable development workflow.
 
 ---
 
