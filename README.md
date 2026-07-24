@@ -43,7 +43,8 @@ This repository documents both my continuous learning and the development of reu
 - [Day 14 - Reusable AI-Assisted Partner Operations Package](week03/day14.md)
 ### Week 4
 - [Day 15 - Reusable Multi-Scenario Incident Workflow](week04/day15.md)
-- [Day 16 -  Deterministic Quality Evaluation](week04/day16.md)
+- [Day 16 - Deterministic Quality Evaluation](week04/day16.md)
+- [Day 17 - Local Development Environment](week04/day17.md)
 
 ## Featured Projects
 
