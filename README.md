@@ -45,7 +45,7 @@ This repository documents both my continuous learning and the development of reu
 - [Day 15 - Reusable Multi-Scenario Incident Workflow](week04/day15.md)
 - [Day 16 - Deterministic Quality Evaluation](week04/day16.md)
 - [Day 17 - Local Development Environment](week04/day17.md)
-- [Day18 - Git Workflow Practice](week04/day18.md)
+- [Day 18 - Git Workflow Practice](week04/day18.md)
 
 ## Featured Projects
 
