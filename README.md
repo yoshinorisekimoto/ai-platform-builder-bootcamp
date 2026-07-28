@@ -46,6 +46,7 @@ This repository documents both my continuous learning and the development of reu
 - [Day 16 - Deterministic Quality Evaluation](week04/day16.md)
 - [Day 17 - Local Development Environment](week04/day17.md)
 - [Day 18 - Git Workflow Practice](week04/day18.md)
+- [Day 19 – Technical Case Study: HTTP 401 Unauthorized](week04/day19.md)
 
 ## Featured Projects
 
