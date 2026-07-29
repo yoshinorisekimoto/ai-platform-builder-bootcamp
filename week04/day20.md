@@ -17,6 +17,7 @@ Thirty partners are affected, but Engineering can directly support only two.
 | Partner | Situation |
 |---|---|
 | A | High revenue, migration not started, small engineering team |
+| B | Medium revenue, testing started, strong engineering team, possible API defect |
 | C | Low current revenue, high future value, migration not started |
 
 ---
