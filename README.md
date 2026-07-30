@@ -48,6 +48,7 @@ This repository documents both my continuous learning and the development of reu
 - [Day 18 - Git Workflow Practice](week04/day18.md)
 - [Day 19 – Technical Case Study: HTTP 401 Unauthorized](week04/day19.md)
 - [Day 20 - Managing AI-Assisted Decisions](week04/day20.md)
+- [Day 21 - AI-Assisted Prioritization Under Commercial Pressure](week04/day21.md)
 
 ## Featured Projects
 
