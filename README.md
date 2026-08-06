@@ -52,6 +52,7 @@ This repository documents both my continuous learning and the development of reu
 - [Day 21 - AI-Assisted Prioritization Under Commercial Pressure](week05/day21.md)
 - [Day 22 - Partner Launch vs Platform Risk](week05/day22.md)
 - [Day 23 - Strategic Partner Exception vs Platform Standardization](week05/day23.md)
+- [Day 24 - Protecting Revenue Without Lowering Product Quality](week05/day24.md)
 
 ## Featured Projects
 
