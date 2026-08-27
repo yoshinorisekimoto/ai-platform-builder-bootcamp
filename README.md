@@ -55,6 +55,7 @@ This repository documents both my continuous learning and the development of reu
 - [Day 24 - Protecting Revenue Without Lowering Product Quality](week05/day24.md)
 ### Week 6
 - [Day 25 - Turning Product Constraints into a Commercial Plan](week06/day25.md)
+- [Day 26 - AI Pilot, Commercial Momentum, and Platform Safety](week06/day26.md)
 
 ## Featured Projects
 
