@@ -56,6 +56,7 @@ This repository documents both my continuous learning and the development of reu
 ### Week 6
 - [Day 25 - Turning Product Constraints into a Commercial Plan](week06/day25.md)
 - [Day 26 - AI Pilot, Commercial Momentum, and Platform Safety](week06/day26.md)
+- [Day 27 - Stakeholder Alignment and Executive Commitment](week06/day27.md)
 
 ## Featured Projects
 
