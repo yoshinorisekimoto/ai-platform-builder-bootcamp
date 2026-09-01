@@ -4,6 +4,11 @@ This repository explores how AI can support technical and commercial decision-ma
 
 AI structures the evidence; humans own judgment, commitment, and accountability.
 
+## Project Roadmap
+
+See the [Bootcamp Roadmap](ROADMAP.md) for the Day 30–120 direction and milestones.
+Milestones are directional and may evolve as the project develops.
+
 ## Featured Case Studies
 
 - [Day 23 - Strategic Partner Exception vs Platform Standardization](week05/day23.md)
