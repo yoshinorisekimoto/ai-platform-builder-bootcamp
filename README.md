@@ -58,6 +58,7 @@ This repository documents both my continuous learning and the development of reu
 - [Day 26 - AI Pilot, Commercial Momentum, and Platform Safety](week06/day26.md)
 - [Day 27 - Stakeholder Alignment and Executive Commitment](week06/day27.md)
 - [Day 28 - Balancing Platform Stability and Commercial Speed](week06/day28.md)
+- [Day 29 - AI-Assisted Executive Decision Brief with Human Guardrails](week06/day29.md)
 
 ## Featured Projects
 
