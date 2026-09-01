@@ -1,7 +1,14 @@
 # AI Platform Builder Bootcamp
 
-This project demonstrates how a single workflow can support multiple API incident scenarios by separating workflow logic from scenario definitions.
-Building reusable frameworks for AI-assisted platform partnerships, partner operations, API integration, and ecosystem design.
+This repository explores how AI can support technical and commercial decision-making in Platform Partnerships. It combines reusable Python workflows, evidence controls, human approval gates, and case studies for API integration, partner operations, and executive decisions.
+
+AI structures the evidence; humans own judgment, commitment, and accountability.
+
+## Featured Case Studies
+
+- [Day 23 - Strategic Partner Exception vs Platform Standardization](week05/day23.md)
+- [Day 28 - Balancing Platform Stability and Commercial Speed](week06/day28.md)
+- [Day 29 - AI-Assisted Executive Decision Brief with Human Guardrails](week06/day29.md)
 
 ## Why
 This repository documents both my continuous learning and the development of reusable assets for platform design, partner operations, and AI-assisted workflows.
