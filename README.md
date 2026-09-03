@@ -3,6 +3,7 @@
 This repository explores how AI can support technical and commercial decision-making in Platform Partnerships. It combines reusable Python workflows, evidence controls, human approval gates, and case studies for API integration, partner operations, and executive decisions.
 
 AI structures the evidence; humans own judgment, commitment, and accountability.
+See the [Agent Operating Rules](AGENTS.md) for the current Human-AI responsibility boundaries.
 
 ## Project Roadmap
 
@@ -14,6 +15,7 @@ Milestones are directional and may evolve as the project develops.
 - [Day 23 - Strategic Partner Exception vs Platform Standardization](week05/day23.md)
 - [Day 28 - Balancing Platform Stability and Commercial Speed](week06/day28.md)
 - [Day 29 - AI-Assisted Executive Decision Brief with Human Guardrails](week06/day29.md)
+- [Day 30 - Designing the Human-AI Boundary for Platform Partnerships](week06/day30.md)
 
 ## Why
 This repository documents both my continuous learning and the development of reusable assets for platform design, partner operations, and AI-assisted workflows.
