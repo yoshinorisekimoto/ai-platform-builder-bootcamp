@@ -74,6 +74,7 @@ This repository documents both my continuous learning and the development of reu
 - [Day 29 - AI-Assisted Executive Decision Brief with Human Guardrails](week06/day29.md)
 ### Week 7
 - [Day 30 - Designing the Human-AI Boundary for Platform Partnerships](week07/day30.md)
+- [Day 31- Evidence-Based Launch Communication](week07/day31.md)
 
 ## Featured Projects
 
