@@ -15,6 +15,7 @@ Milestones are directional and may evolve as the project develops.
 - [Day 23 - Strategic Partner Exception vs Platform Standardization](week05/day23.md)
 - [Day 28 - Balancing Platform Stability and Commercial Speed](week06/day28.md)
 - [Day 29 - AI-Assisted Executive Decision Brief with Human Guardrails](week06/day29.md)
+- [Day 32 - Applying Agent Rules to a Standard API Request](week07/day32.md)
 
 ## Why
 This repository documents both my continuous learning and the development of reusable assets for platform design, partner operations, and AI-assisted workflows.
@@ -74,7 +75,8 @@ This repository documents both my continuous learning and the development of reu
 - [Day 29 - AI-Assisted Executive Decision Brief with Human Guardrails](week06/day29.md)
 ### Week 7
 - [Day 30 - Designing the Human-AI Boundary for Platform Partnerships](week07/day30.md)
-- [Day 31- Evidence-Based Launch Communication](week07/day31.md)
+- [Day 31 - Evidence-Based Launch Communication](week07/day31.md)
+- [Day 32 - Applying Agent Rules to a Standard API Request](week07/day32.md)
 
 ## Featured Projects
 
