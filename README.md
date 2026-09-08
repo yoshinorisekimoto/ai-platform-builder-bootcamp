@@ -77,6 +77,7 @@ This repository documents both my continuous learning and the development of reu
 - [Day 30 - Designing the Human-AI Boundary for Platform Partnerships](week07/day30.md)
 - [Day 31 - Evidence-Based Launch Communication](week07/day31.md)
 - [Day 32 - Applying Agent Rules to a Standard API Request](week07/day32.md)
+- [Day 33 - Splitting Standard Work from Human Commitment](week07/day33.md)
 
 ## Featured Projects
 
