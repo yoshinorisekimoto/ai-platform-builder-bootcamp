@@ -94,7 +94,7 @@ The model:
 - Avoided claiming that the cause of the HTTP 429 error was known
 - Did not send any external communication
 
-## AI Execution and Human Accountability
+## Summary
 
 AI executes repeatable controls such as detecting, redacting, and minimizing information.
 
