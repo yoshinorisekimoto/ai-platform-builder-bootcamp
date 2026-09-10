@@ -16,6 +16,7 @@ Milestones are directional and may evolve as the project develops.
 - [Day 28 - Balancing Platform Stability and Commercial Speed](week06/day28.md)
 - [Day 29 - AI-Assisted Executive Decision Brief with Human Guardrails](week06/day29.md)
 - [Day 32 - Applying Agent Rules to a Standard API Request](week07/day32.md)
+- [Day 35 - Minimum Information and Permission](week08/day35.md)
 
 ## Why
 This repository documents both my continuous learning and the development of reusable assets for platform design, partner operations, and AI-assisted workflows.
