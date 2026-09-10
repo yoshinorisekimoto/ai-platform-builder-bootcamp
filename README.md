@@ -39,7 +39,7 @@ This repository documents both my continuous learning and the development of reu
 - Continuously improve through practical experiments.
 
 ## Learning Journey
-## How to Read This Repository
+### How to Read This Repository
 
 Each daily entry follows a consistent format: a realistic Platform Partnerships
 scenario, the information/permission boundaries applied, the AI's output, and
@@ -100,5 +100,6 @@ refine rules established in earlier ones.
 🚧 Under Development
 
 ### AI-assisted Partner Operations
-Designing reusable AI-assisted workflows for partner operations, evidence validation, and human approval gates.
+Designing reusable AI-assisted workflows for partner operations, evidence validation, and human approval gates.Current daily case studies
+(Day 30–39) feed directly into this project.
 ➡️ [View Project](projects/ai-assisted-partner-operations/)
