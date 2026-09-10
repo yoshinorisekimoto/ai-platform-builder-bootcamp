@@ -79,6 +79,8 @@ This repository documents both my continuous learning and the development of reu
 - [Day 32 - Applying Agent Rules to a Standard API Request](week07/day32.md)
 - [Day 33 - Splitting Standard Work from Human Commitment](week07/day33.md)
 - [Day 34 - Escalating Conflicting Technical Evidence](week07/day34.md)
+### Week 8
+- [Day 35 - Minimum Information and Permission](week08/day35.md)
 
 ## Featured Projects
 
