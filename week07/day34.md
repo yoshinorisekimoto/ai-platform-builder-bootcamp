@@ -84,3 +84,6 @@ The Partner and Platform used different test lists. AI noticed the mismatch and 
 - Did it avoid assigning unverified responsibility?
 - Did it limit unknowns to the next required decision?
 - Did humans retain ownership of testing, approval, and Partner communication?
+
+Current daily case studies
+(Day 30–39) feed directly into this project.
