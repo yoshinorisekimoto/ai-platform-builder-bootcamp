@@ -108,12 +108,6 @@ Providing only the minimum necessary evidence reduces privacy exposure and preve
 
 This case applies a strict binary rule: allow or withhold. Later cases may examine whether derived or aggregated information can be used without exposing the original sensitive context.
 
-## Explanation for Middle School Students
-
-The AI should receive only the information needed to solve the problem.
-
-Before the AI reads a technical log, secret keys and identifying information must be removed. The AI can help remove them, but a human must check the result before the investigation continues.
-
 ## Points Requiring Human Review
 
 Humans must confirm:
