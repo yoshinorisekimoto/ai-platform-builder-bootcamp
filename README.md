@@ -94,6 +94,7 @@ refine rules established in earlier ones.
 - [Day 34 - Escalating Conflicting Technical Evidence](week07/day34.md)
 ### Week 8
 - [Day 35 - Minimum Information and Permission](week08/day35.md)
+- [Day 36 - Re-identification Risk in Aggregated Data](week08/day36.md)
 
 ## Featured Projects
 
