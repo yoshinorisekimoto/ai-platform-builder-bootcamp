@@ -1,5 +1,6 @@
 # AI Platform Builder Bootcamp
 
+*A self-directed learning project — daily case studies, not a production system.*
 This repository explores how AI can support technical and commercial decision-making in Platform Partnerships. It combines reusable Python workflows, evidence controls, human approval gates, and case studies for API integration, partner operations, and executive decisions.
 
 AI structures the evidence; humans own judgment, commitment, and accountability.
