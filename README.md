@@ -95,6 +95,7 @@ refine rules established in earlier ones.
 ### Week 8
 - [Day 35 - Minimum Information and Permission](week08/day35.md)
 - [Day 36 - Re-identification Risk in Aggregated Data](week08/day36.md)
+- [Day 37 - Standard-Work Eligibility Test](week08/day37.md)
 
 ## Featured Projects
 
