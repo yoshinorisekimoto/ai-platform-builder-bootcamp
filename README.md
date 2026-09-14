@@ -40,8 +40,7 @@ This repository documents both my continuous learning and the development of reu
 - Create portfolio-ready projects.
 - Continuously improve through practical experiments.
 
-## Learning Journey
-### How to Read This Repository
+## How to Read This Repository
 
 Each daily entry follows a consistent format: a realistic Platform Partnerships
 scenario, the information/permission boundaries applied, the AI's output, and
@@ -52,6 +51,8 @@ refine rules established in earlier ones.
 1. [Day 30](week07/day30.md) – Why a Human-AI boundary is needed
 2. [Day 32](week07/day32.md) – How the boundary is applied to a standard case
 3. [ROADMAP.md](ROADMAP.md) – Where this is heading (Day 40 Rules v1)
+
+## Learning Journey
 
 ### Week 1
 - [Day 01 - First Impression of AI Development](week01/day01.md)
