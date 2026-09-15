@@ -99,6 +99,7 @@ refine rules established in earlier ones.
 - [Day 35 - Minimum Information and Permission](week08/day35.md)
 - [Day 36 - Re-identification Risk in Aggregated Data](week08/day36.md)
 - [Day 37 - Standard-Work Eligibility Test](week08/day37.md)
+- [Day 38 - Escalation-Routing Test](week08/day38.md)
 
 ## Featured Projects
 
