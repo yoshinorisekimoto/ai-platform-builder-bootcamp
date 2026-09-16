@@ -100,6 +100,7 @@ refine rules established in earlier ones.
 - [Day 36 - Re-identification Risk in Aggregated Data](week08/day36.md)
 - [Day 37 - Standard-Work Eligibility Test](week08/day37.md)
 - [Day 38 - Escalation-Routing Test](week08/day38.md)
+- [Day 39 - Integrated Human-AI Boundary Test](week08/day39.md)
 
 ## Featured Projects
 
