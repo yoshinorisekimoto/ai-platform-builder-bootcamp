@@ -49,3 +49,6 @@ This document contains the complete day-by-day record of the AI Platform Builder
 - [Day 37 - Standard-Work Eligibility Test](week08/day37.md)
 - [Day 38 - Escalation-Routing Test](week08/day38.md)
 - [Day 39 - Integrated Human-AI Boundary Test](week08/day39.md)
+
+### Week 9
+- [Day 40 - Formalizing Agent Operating Rules](week09/day40.md)
