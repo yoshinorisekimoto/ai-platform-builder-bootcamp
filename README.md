@@ -50,7 +50,7 @@ refine rules established in earlier ones.
 **Recommended reading order for reviewers (5–10 min):**
 1. [Day 30](week07/day30.md) – Why a Human-AI boundary is needed
 2. [Day 32](week07/day32.md) – How the boundary is applied to a standard case
-3. [ROADMAP.md](ROADMAP.md) – Where this is heading (Day 40 Rules v1)
+3. [Day 40](week09/day40.md) – The formalized Rules v1 (where Days 30–39 converge)
 
 ## Learning Journey
 
