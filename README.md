@@ -66,7 +66,7 @@ A week-by-week overview of the AI Platform Builder Bootcamp.
 | 6 | Commercial planning, stakeholder alignment, and executive decisions | [Days 25–29](LEARNING_JOURNEY.md#week-6) |
 | 7 | Human-AI boundaries and evidence-based escalation | [Days 30–34](LEARNING_JOURNEY.md#week-7) |
 | 8 | Data permission, standard work, and integrated governance | [Days 35–39](LEARNING_JOURNEY.md#week-8) |
-| 9 | Operationalizing agent governance | [Week 9](LEARNING_JOURNEY.md#week-9) |
+| 9 | Agent governance standardization | [Week 9](LEARNING_JOURNEY.md#week-9) |
 
 [View the complete day-by-day journey](LEARNING_JOURNEY.md)
 
