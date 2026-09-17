@@ -54,53 +54,20 @@ refine rules established in earlier ones.
 
 ## Learning Journey
 
-### Week 1
-- [Day 01 - First Impression of AI Development](week01/day01.md)
-- [Day 02 - AI Changes the Development Workflow](week01/day02.md)
-- [Day 03 - Git as a Shared Knowledge Platform](week01/day03.md)
-- [Day 04 - AI-Assisted Code Review](week01/day04.md)
-### Week 2
-- [Day 05 - Choosing the Right AI for the Right Task](week02/day05.md)
-- [Day 06 - AI-Assisted API Troubleshooting](week02/day06.md)
-- [Day 07 - AI Platform Builder Bootcamp](week02/day07.md)
-- [Day 08 - Designing Cross-Functional Partnership Teams with AI](week02/day08.md)
-- [Day 09 - Managing an AI Team](week02/day09.md)
-### Week 3
-- [Day 10 - Executing a Manual AI Role Workflow](week03/day10.md)
-- [Day 11 - Automating AI Role Handoffs](week03/day11.md)
-- [Day 12 - Constraining AI with Evidence Controls](week03/day12.md)
-- [Day 13 - Controlling AI Recommendations with Human Approval Gates](week03/day13.md)
-- [Day 14 - Reusable AI-Assisted Partner Operations Package](week03/day14.md)
-### Week 4
-- [Day 15 - Reusable Multi-Scenario Incident Workflow](week04/day15.md)
-- [Day 16 - Deterministic Quality Evaluation](week04/day16.md)
-- [Day 17 - Local Development Environment](week04/day17.md)
-- [Day 18 - Git Workflow Practice](week04/day18.md)
-- [Day 19 – Technical Case Study: HTTP 401 Unauthorized](week04/day19.md)
-### Week 5
-- [Day 20 - Managing AI-Assisted Decisions](week05/day20.md)
-- [Day 21 - AI-Assisted Prioritization Under Commercial Pressure](week05/day21.md)
-- [Day 22 - Partner Launch vs Platform Risk](week05/day22.md)
-- [Day 23 - Strategic Partner Exception vs Platform Standardization](week05/day23.md)
-- [Day 24 - Protecting Revenue Without Lowering Product Quality](week05/day24.md)
-### Week 6
-- [Day 25 - Turning Product Constraints into a Commercial Plan](week06/day25.md)
-- [Day 26 - AI Pilot, Commercial Momentum, and Platform Safety](week06/day26.md)
-- [Day 27 - Stakeholder Alignment and Executive Commitment](week06/day27.md)
-- [Day 28 - Balancing Platform Stability and Commercial Speed](week06/day28.md)
-- [Day 29 - AI-Assisted Executive Decision Brief with Human Guardrails](week06/day29.md)
-### Week 7
-- [Day 30 - Designing the Human-AI Boundary for Platform Partnerships](week07/day30.md)
-- [Day 31 - Evidence-Based Launch Communication](week07/day31.md)
-- [Day 32 - Applying Agent Rules to a Standard API Request](week07/day32.md)
-- [Day 33 - Splitting Standard Work from Human Commitment](week07/day33.md)
-- [Day 34 - Escalating Conflicting Technical Evidence](week07/day34.md)
-### Week 8
-- [Day 35 - Minimum Information and Permission](week08/day35.md)
-- [Day 36 - Re-identification Risk in Aggregated Data](week08/day36.md)
-- [Day 37 - Standard-Work Eligibility Test](week08/day37.md)
-- [Day 38 - Escalation-Routing Test](week08/day38.md)
-- [Day 39 - Integrated Human-AI Boundary Test](week08/day39.md)
+39 daily case studies completed across eight weeks.
+
+| Week | Focus | Details |
+|---|---|---|
+| 1 | AI development fundamentals and Git | [Days 1–4](LEARNING_JOURNEY.md#week-1) |
+| 2 | AI task selection, troubleshooting, and team design | [Days 5–9](LEARNING_JOURNEY.md#week-2) |
+| 3 | Role workflows, evidence controls, and approval gates | [Days 10–14](LEARNING_JOURNEY.md#week-3) |
+| 4 | Incident workflows, evaluation, and development practice | [Days 15–19](LEARNING_JOURNEY.md#week-4) |
+| 5 | Commercial pressure, platform risk, and exceptions | [Days 20–24](LEARNING_JOURNEY.md#week-5) |
+| 6 | Commercial planning, stakeholder alignment, and executive decisions | [Days 25–29](LEARNING_JOURNEY.md#week-6) |
+| 7 | Human-AI boundaries and evidence-based escalation | [Days 30–34](LEARNING_JOURNEY.md#week-7) |
+| 8 | Data permission, standard work, and integrated governance | [Days 35–39](LEARNING_JOURNEY.md#week-8) |
+
+[View the complete day-by-day journey](LEARNING_JOURNEY.md)
 
 ## Featured Projects
 
