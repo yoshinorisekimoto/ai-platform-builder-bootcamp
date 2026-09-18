@@ -52,3 +52,4 @@ This document contains the complete day-by-day record of the AI Platform Builder
 
 ### Week 9
 - [Day 40 - Formalizing Agent Operating Rules](week09/day40.md)
+- [Day 41 – Partner Request Intake](week09/day41.md)
