@@ -13,36 +13,33 @@ The Platform AI must:
 - route the case to the Platform Partner Lead
 - stop before approval, execution, or external communication
 
-This is Stage 1 of a multi-day End-to-End Partner Workflow (Days 41–50). Unlike the single-case tests in Days 30–40, each stage in this series follows a consistent specification format: objective, roles, authority, stage-specific rules, workflow, actions, and test result.
+This is Stage 1 of a multi-day End-to-End Partner Workflow (Days 41–50). Unlike the single-case tests in Days 30–40, each stage in this series follows a consistent specification format: stage rules, applied case, and governance.
 
-## Case
+---
 
-A Partner requests an increase in the production API rate limit from 100 to 500 requests per minute for a planned launch.
+## Stage Specification
 
-## Roles
+### Roles
 
-### Platform AI
-
+**Platform AI**
 - checks and records the request
 - separates intake information from review evidence
 - classifies the intake and evidence status
 - routes the case to the Platform Partner Lead
 - creates an audit trail
 
-### Platform Partner Lead
-
+**Platform Partner Lead**
 - owns internal routing and coordination
 - identifies the appropriate Decision Owner
 - manages Partner communication
 - instructs the AI on the next authorized action
 
-### Engineering
-
+**Engineering**
 - reviews technical evidence
 - evaluates capacity and technical risk
 - makes the final technical decision
 
-## Authority
+### Authority
 
 The Platform AI may receive, record, classify, and route the request.
 
@@ -54,7 +51,7 @@ It may not:
 - promise the launch
 - communicate externally without Human authorization
 
-## Minimum Intake Information
+### Minimum Intake Information
 
 The request cannot complete intake without:
 
@@ -72,7 +69,7 @@ If any intake field is missing:
 - Routing: `PLATFORM_PARTNER_LEAD`
 - Decision Owner: `NOT_ASSIGNED`
 
-## Review Evidence
+### Review Evidence
 
 After intake is complete, the following evidence may be collected:
 
@@ -81,11 +78,9 @@ After intake is complete, the following evidence may be collected:
 - recent 429 logs
 - Engineering capacity approval
 
-Missing review evidence does not make the intake incomplete.
+Missing review evidence does not make the intake incomplete. It means that the request has been accepted, but the technical decision is not ready.
 
-It means that the request has been accepted, but the technical decision is not ready.
-
-## Workflow
+### Workflow
 
 1. Receive the Partner request.
 2. Check the minimum intake information.
@@ -95,33 +90,38 @@ It means that the request has been accepted, but the technical decision is not r
 6. Route the case to the Platform Partner Lead.
 7. Stop before approval, execution, or external communication.
 
-## Actions
+---
 
-### Complete intake with missing review evidence
+## Applied to This Case
 
+### Case
+
+A Partner requests an increase in the production API rate limit from 100 to 500 requests per minute for a planned launch.
+
+### Actions
+
+**Complete intake with missing review evidence**
 - Action: `RECORD_AND_ROUTE_REQUEST`
 - Intake status: `COMPLETE`
 - Evidence status: `COLLECTION_REQUIRED`
 - Routing: `PLATFORM_PARTNER_LEAD`
 - Decision Owner: `ENGINEERING`
 
-### Incomplete intake
-
+**Incomplete intake**
 - Action: `STOP_INTAKE`
 - Intake status: `INCOMPLETE`
 - Evidence status: `NOT_EVALUATED`
 - Routing: `PLATFORM_PARTNER_LEAD`
 - Decision Owner: `NOT_ASSIGNED`
 
-### Complete intake with all review evidence
-
+**Complete intake with all review evidence**
 - Action: `RECORD_AND_ROUTE_REQUEST`
 - Intake status: `COMPLETE`
 - Evidence status: `READY_FOR_VALIDATION`
 - Routing: `PLATFORM_PARTNER_LEAD`
 - Decision Owner: `ENGINEERING`
 
-## Test Result
+### Test Result
 
 All three test cases passed.
 
@@ -131,7 +131,11 @@ All three test cases passed.
 | Incomplete intake | Stop intake; do not evaluate review evidence | Passed |
 | Complete intake with all review evidence | Record and route; ready for validation | Passed |
 
-## Audit Requirements
+---
+
+## Governance
+
+### Audit Requirements
 
 The audit trail must record:
 
@@ -146,7 +150,7 @@ The audit trail must record:
 - action taken
 - external communication status
 
-## Human Review Points
+### Human Review Points
 
 A Human must confirm:
 
@@ -156,7 +160,7 @@ A Human must confirm:
 - whether any external response may be sent
 - whether the final decision has been made by the authorized owner
 
-## AI and Human Boundary
+### AI and Human Boundary
 
 The Platform AI prepares and structures the work.
 
@@ -166,7 +170,7 @@ Engineering owns the technical decision.
 
 The AI must not convert intake completion into approval or execution authority.
 
-## Future Compatibility
+### Future Compatibility
 
 The structured intake can later support requests from a Partner AI Agent.
 
