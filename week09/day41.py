@@ -13,9 +13,7 @@ REVIEW_EVIDENCE = (
     "current_traffic",
     "expected_peak_traffic",
     "recent_429_logs",
-    "engineering_capacity_approval",
 )
-
 
 def is_missing(value):
     return value is None or value == ""
@@ -73,7 +71,6 @@ cases = {
         "current_traffic": None,
         "expected_peak_traffic": None,
         "recent_429_logs": None,
-        "engineering_capacity_approval": None,
     },
     "Incomplete intake": {
         "partner_id": "partner-002",
@@ -84,7 +81,6 @@ cases = {
         "current_traffic": None,
         "expected_peak_traffic": None,
         "recent_429_logs": None,
-        "engineering_capacity_approval": None,
     },
     "Complete intake with all review evidence": {
         "partner_id": "partner-003",
@@ -95,7 +91,6 @@ cases = {
         "current_traffic": 90,
         "expected_peak_traffic": 450,
         "recent_429_logs": "log-reference-003",
-        "engineering_capacity_approval": "APPROVED",
     },
 }
 

@@ -76,7 +76,6 @@ After intake is complete, the following evidence may be collected:
 - current traffic
 - expected peak traffic
 - recent 429 logs
-- Engineering capacity approval
 
 Missing review evidence does not make the intake incomplete. It means that the request has been accepted, but the technical decision is not ready.
 
