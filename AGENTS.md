@@ -125,3 +125,45 @@ The record must include:
 ## Core Principle
 
 **Agents can execute approved standard work. Humans own judgment, commitments, exceptions, risk acceptance, relationships, and final authorization.**
+
+## Shared Framework: End-to-End Partner Workflow (Days 41-50)
+
+This framework applies to every stage of the End-to-End Partner Workflow.
+
+Stage documents must define stage-specific logic without repeating or overriding these shared rules.
+
+### Platform AI: Prohibited Actions
+
+The Platform AI must not:
+
+- approve an exception
+- resolve conflicting Evidence by selecting one value
+- define a new purpose for sensitive or protected data
+- delete or modify protected original data
+- make the final technical decision
+- accept risk on behalf of a Human owner
+- make a Partner commitment
+- communicate externally without explicit Human authorization
+
+When any prohibited action is required, the Platform AI must stop, record the reason, and escalate the case to the authorized Human owner.
+
+### Governance Vocabulary
+
+- `Notify`: Provides visibility. No Human action or decision is required.
+- `Escalate`: Requests Human judgment, approval, or action.
+- `Resume Condition`: Defines the condition that must be satisfied before a stopped process may continue.
+- `Evidence`: A governed object with its own Source, Source Owner, context, validation status, and audit history. Capitalize `Evidence` when using this governed meaning.
+
+`Notify` must not be used when Human judgment is required.
+
+`Escalate` must identify the issue, next owner, required decision or action, and Resume Condition.
+
+### Standard Stage Structure
+
+Each stage document uses three sections:
+
+- `Stage Specification`: Defines the inputs, stage-specific roles, rules, outputs, Stop Conditions, and Workflow.
+- `Applied to This Case`: Applies the stage rules to a concrete Partner case and records the tested actions and results.
+- `Governance`: Defines stage-specific audit requirements, Human review points, and additional risks.
+
+From Day 44 onward, stage documents reference this Shared Framework instead of repeating common prohibitions, vocabulary, and AI–Human boundaries.
