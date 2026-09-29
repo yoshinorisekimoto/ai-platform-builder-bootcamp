@@ -86,7 +86,9 @@ It may not:
 - make the final technical decision
 - communicate externally without Human authorization
 
-### Minimum Required Information
+### Information Boundaries
+
+**Minimum Required Information** (must include)
 
 The Engineering Evidence Package must include:
 
@@ -98,7 +100,7 @@ The Engineering Evidence Package must include:
 - recent 429 count
 - recent 429 time window
 
-### Prohibited Standard Fields
+**Prohibited Standard Fields** (must exclude by default)
 
 The standard Engineering Package must not include:
 
@@ -109,7 +111,7 @@ The standard Engineering Package must not include:
 
 These fields require a documented exception and explicit approval before any approved subset may be shared.
 
-### Exception Approval Conditions
+**Exception Approval Conditions** (required to override an exclusion)
 
 An exception request must document:
 
@@ -339,39 +341,3 @@ The minimum-information structure separates required fields, excluded fields, So
 This structure can later support a Partner AI Agent while preserving data minimization and Human approval boundaries.
 
 Agent-to-Agent communication is not implemented in Day 43. The current workflow remains Platform-AI-only and Human-controlled.
-
-### Information Boundaries
-
-**Minimum Required Information** (must include)
-
-The Engineering Evidence Package must include:
-
-- Partner ID
-- Production endpoint
-- current traffic
-- expected peak traffic
-- peak calculation basis
-- recent 429 count
-- recent 429 time window
-
-**Prohibited Standard Fields** (must exclude by default)
-
-The standard Engineering Package must not include:
-
-- end-user IP address
-- user ID
-- full request payload
-- full raw logs
-
-These fields require a documented exception and explicit approval before any approved subset may be shared.
-
-**Exception Approval Conditions** (required to override an exclusion)
-
-An exception request must document:
-
-- specific technical purpose
-- minimum required fields and scope
-- relevant time range
-- access controls
-- retention period
-- explicit Data Privacy Owner approval
