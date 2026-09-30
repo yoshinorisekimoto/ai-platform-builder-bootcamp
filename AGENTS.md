@@ -165,5 +165,6 @@ Each stage document uses three sections:
 - `Stage Specification`: Defines the inputs, stage-specific roles, rules, outputs, Stop Conditions, and Workflow.
 - `Applied to This Case`: Applies the stage rules to a concrete Partner case and records the tested actions and results.
 - `Governance`: Defines stage-specific audit requirements, Human review points, and additional risks.
+- Define any new stage-specific role in one sentence when it first appears.
 
 From Day 44 onward, stage documents reference this Shared Framework instead of repeating common prohibitions, vocabulary, and AI–Human boundaries.
