@@ -56,3 +56,7 @@ This document contains the complete day-by-day record of the AI Platform Builder
 - [Day 42 – Evidence Collection and Validation](week09/day42.md)
 - [Day 43 – Minimum-Information Control](week09/day43.md)
 - [Day 44 – Minimum-Permission Control](week09/day44.md)
+
+### Week 10
+
+- [Day 45 – Missing Evidence and Clarification](week10/day45.md)

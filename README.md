@@ -67,6 +67,7 @@ A week-by-week overview of the AI Platform Builder Bootcamp.
 | 7 | Human-AI boundaries and evidence-based escalation | [Days 30–34](LEARNING_JOURNEY.md#week-7) |
 | 8 | Data permission, standard work, and integrated governance | [Days 35–39](LEARNING_JOURNEY.md#week-8) |
 | 9 | Agent rules, Partner intake, and evidence and permission controls   | [Days 40–44](LEARNING_JOURNEY.md#week-9) |
+| 10| Clarification control and decision preparation                     | [Week 10](LEARNING_JOURNEY.md#week-10) |
 
 [View the complete day-by-day journey](LEARNING_JOURNEY.md)
 
