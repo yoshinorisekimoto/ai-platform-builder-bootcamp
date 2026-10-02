@@ -1,10 +1,11 @@
 # AI Platform Builder Bootcamp
 
-*A self-directed learning project — daily case studies, not a production system.*
+*A self-directed learning project — daily case studies, not a production system.
 
-This repository explores how AI can support technical and commercial decision-making in Platform Partnerships. It combines reusable Python workflows, evidence controls, human approval gates, and case studies for API integration, partner operations, and executive decisions.
+This repository tracks an ongoing question: in partner-facing work — API integrations, partner prioritization, exception handling, and cross-functional execution — where can AI act safely, and where must a human still decide?
 
-AI structures the evidence; humans own judgment, commitment, and accountability.
+Each case study works through a realistic partnership scenario, testing where AI can support the work and where judgment, accountability, and trust-building stay with the person.
+
 See the [Agent Operating Rules](AGENTS.md) for the current Human-AI responsibility boundaries.
 
 ## Project Roadmap
