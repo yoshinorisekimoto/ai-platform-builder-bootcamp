@@ -60,3 +60,4 @@ This document contains the complete day-by-day record of the AI Platform Builder
 ### Week 10
 
 - [Day 45 – Missing Evidence and Clarification](week10/day45.md)
+- [Day 46 – Decision Preparation and Engineering Review Control](week10/day46.md)
