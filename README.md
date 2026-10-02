@@ -14,6 +14,7 @@ See the [Bootcamp Roadmap](ROADMAP.md) for the Day 30–120 direction and milest
 Milestones are directional and may evolve as the project develops.
 
 ## Featured Case Studies
+These case studies explore practical partnership decisions, including partner exceptions, platform stability vs. speed, executive decision support, and human-AI responsibility boundaries.
 
 - [Day 23 - Strategic Partner Exception vs Platform Standardization](week05/day23.md)
 - [Day 28 - Balancing Platform Stability and Commercial Speed](week06/day28.md)
