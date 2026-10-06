@@ -122,6 +122,7 @@ The Engineering approval only covers the launch window, not the full week.
 | Standard approved Partner message | Lead reviews and sends | PASS |
 | Partner requests full-day use | Stop and require new Engineering decision | PASS |
 | Partner makes a conflicting customer commitment | Clarify existing approval and prevent scope expansion | PASS |
+| AI draft introduces an unapproved promise | Correct the draft before external send | PASS |
 
 ---
 
