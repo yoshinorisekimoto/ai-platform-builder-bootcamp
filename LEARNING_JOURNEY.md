@@ -62,3 +62,4 @@ This document contains the complete day-by-day record of the AI Platform Builder
 - [Day 45 – Missing Evidence and Clarification](week10/day45.md)
 - [Day 46 – Decision Preparation and Engineering Review Control](week10/day46.md)
 - [Day 47 – Internal Decision Handoff](week10/day47.md)
+- [Day 48 – External Partner Communication](week10/day48.md)
