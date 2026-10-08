@@ -70,7 +70,7 @@ A week-by-week overview of the AI Platform Builder Bootcamp.
 | 8 | Data permission, standard work, and integrated governance | [Days 35–39](LEARNING_JOURNEY.md#week-8) |
 | 9 | Rules v1, Partner intake, and evidence and permission controls  | [Days 40–44](LEARNING_JOURNEY.md#week-9) |
 | 10 | End-to-End Partner Workflow: Clarification, Decision, Communication, and Closure | [Days 45-49](LEARNING_JOURNEY.md#week-10) |
-| 11 | Agent collaboration, exception handling, and Agent-to-Agent prototype | [Days 50–60](LEARNING_JOURNEY.md#week-11) |
+| 11 | Agent collaboration, exception handling, and Agent-to-Agent prototype | [Week11](LEARNING_JOURNEY.md#week-11) |
 
 [View the complete day-by-day journey](LEARNING_JOURNEY.md)
 
