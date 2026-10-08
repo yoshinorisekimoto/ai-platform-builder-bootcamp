@@ -53,6 +53,7 @@ refine rules established in earlier ones.
 1. [Day 30](week07/day30.md) – Why a Human-AI boundary is needed
 2. [Day 32](week07/day32.md) – How the boundary is applied to a standard case
 3. [Day 40](week09/day40.md) – The formalized Rules v1 (where Days 30–39 converge)
+4. [Day 50](week10/day50.md) – Rules v1 in practice: a full workflow with controlled AI autonomy
 
 ## Learning Journey
 
@@ -70,7 +71,6 @@ A week-by-week overview of the AI Platform Builder Bootcamp.
 | 8 | Data permission, standard work, and integrated governance | [Days 35–39](LEARNING_JOURNEY.md#week-8) |
 | 9 | Rules v1, Partner intake, and evidence and permission controls  | [Days 40–44](LEARNING_JOURNEY.md#week-9) |
 | 10 | End-to-End Partner Workflow: Clarification, Decision, Communication, and Closure | [Days 45-49](LEARNING_JOURNEY.md#week-10) |
-| 11 | Agent collaboration, exception handling, and Agent-to-Agent prototype | [Week11](LEARNING_JOURNEY.md#week-11) |
 
 [View the complete day-by-day journey](LEARNING_JOURNEY.md)
 
