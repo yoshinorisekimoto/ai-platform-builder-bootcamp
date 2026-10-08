@@ -64,3 +64,7 @@ This document contains the complete day-by-day record of the AI Platform Builder
 - [Day 47 – Internal Decision Handoff](week10/day47.md)
 - [Day 48 – External Partner Communication](week10/day48.md)
 - [Day 49 – Workflow Closure and Incident-Risk Control](week10/day49.md)
+
+### Week 11
+
+- [Day 50 – End-to-End Partner Workflow Orchestration](week11/day50.md)
