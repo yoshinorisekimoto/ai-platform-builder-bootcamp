@@ -53,7 +53,7 @@ refine rules established in earlier ones.
 1. [Day 30](week07/day30.md) – Why a Human-AI boundary is needed
 2. [Day 32](week07/day32.md) – How the boundary is applied to a standard case
 3. [Day 40](week09/day40.md) – The formalized Rules v1 (where Days 30–39 converge)
-4. [Day 50](week10/day50.md) – Rules v1 in practice: a full workflow with controlled AI autonomy
+4. [Day 50](week11/day50.md) – Rules v1 in practice: a full workflow with controlled AI autonomy
 
 ## Learning Journey
 
