@@ -148,7 +148,7 @@ Evidence is complete, consistent, and within delegated authority.
 
 #### Case 5: Agents Cannot Resolve the Conflict
 
-Clarification does not produce an authoritative value.
+Repeated clarification does not produce an authoritative value.
 
 - Action: `ESCALATE_UNRESOLVED_CONFLICT`
 - Status: `ESCALATED`
