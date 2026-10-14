@@ -132,6 +132,16 @@ This framework applies to every stage of the End-to-End Partner Workflow.
 
 Stage documents must define stage-specific logic without repeating or overriding these shared rules.
 
+## Delegation Model (Day 51+)
+
+The Delegation Boundary is defined and approved in advance by the Platform Partner Lead.
+
+Actions listed under Auto may be executed without case-by-case human approval.
+
+Standard clarification with the Agency Agent is allowed under this standing authorization.
+
+Human approval is still required for external commitments, exception approval, final technical decisions, and unresolved high-risk cases.
+
 ### Platform AI: Prohibited Actions
 
 The Platform AI must not:
