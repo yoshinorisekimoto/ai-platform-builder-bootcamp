@@ -132,7 +132,9 @@ This framework applies to every stage of the End-to-End Partner Workflow.
 
 Stage documents must define stage-specific logic without repeating or overriding these shared rules.
 
-## Delegation Model (Day 51+)
+## Delegation Model (Day 51)
+
+This model applies from Day 51 onward.
 
 The Delegation Boundary is defined and approved in advance by the Platform Partner Lead.
 
