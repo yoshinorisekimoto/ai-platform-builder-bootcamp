@@ -141,3 +141,12 @@ Record: clarification round count, conflicting values, Partner Human answer, nor
 ### Human Review Points
 
 Humans should verify:
+
+- autonomous clarification does not continue past the retry limit
+- Partner Human answers are normalized and old conflicting state is removed
+- multiple authoritative values do not silently enter downstream decisions
+- only the affected branches are blocked
+
+### Future Compatibility
+
+This stage introduces a reusable pattern, `Clarify → Normalize → Verify → Branch Resume or Human Escalation`, that can later support multiple Agents exchanging structured requirements and evidence, escalating only unresolved exceptions to humans.
