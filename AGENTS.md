@@ -144,6 +144,8 @@ Standard clarification with the Agency Agent is allowed under this standing auth
 
 Human approval is still required for external commitments, exception approval, final technical decisions, and unresolved high-risk cases.
 
+Standard clarification is bounded by a retry limit, defined in [Day 52](week11/day52.md)
+
 ### Platform AI: Prohibited Actions
 
 The Platform AI must not:
