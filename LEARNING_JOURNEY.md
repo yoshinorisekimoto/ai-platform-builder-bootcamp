@@ -69,3 +69,4 @@ This document contains the complete day-by-day record of the AI Platform Builder
 
 - [Day 50 – End-to-End Partner Workflow Orchestration](week11/day50.md)
 - [Day 51 – Agent Role Separation and Delegation Control](week11/day51.md)
+- [Day 52 – Clarification Retry and State Consistency Control](week11/day52.md)
