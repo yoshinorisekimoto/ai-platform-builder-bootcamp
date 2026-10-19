@@ -1,13 +1,19 @@
 from dataclasses import dataclass
 from enum import Enum
+from typing import Optional
 
 
 # ------------------------------------------------------------
-# Governance rules
-# These values are defined by humans, not by the AI.
+# Human-defined governance rules
+# AI may apply these rules but may not change them.
 # ------------------------------------------------------------
 
 MAX_PROVISIONAL_REWORK_PERCENT = 20
+
+REVENUE_POINT_UNIT_USD = 10_000
+EVIDENCE_COMPLETE_BONUS = 5
+DECISION_READY_BONUS = 3
+REWORK_PENALTY_PER_10_PERCENT = 1
 
 
 class WorkflowState(Enum):
@@ -34,7 +40,11 @@ class Branch:
     name: str
     dependency: DependencyClass
     expected_rework_percent: int
-    reusable_percent: int
+    wait_action: str
+    provisional_action: Optional[str]
+    continue_action: str
+    next_owner: str
+    resume_condition: Optional[str] = None
 
 
 @dataclass
@@ -42,6 +52,7 @@ class PartnerCase:
     name: str
     revenue_at_risk: int
     evidence_complete: bool
+    decision_ready: bool
     rework_probability_percent: int
 
 
@@ -50,59 +61,137 @@ class PartnerCase:
 # Dependency + rework control
 # ------------------------------------------------------------
 
-def decide_branch_state(branch: Branch) -> WorkflowState:
+def evaluate_branch(branch: Branch) -> dict:
     """
-    AI applies a process already defined by humans.
-    AI does not redefine the dependency rules.
+    Apply human-defined dependency and rework rules.
+
+    AI does not redefine the dependency class or acceptable
+    rework threshold.
     """
 
     if branch.dependency == DependencyClass.DEPENDENT:
-        return WorkflowState.WAIT
+        return {
+            "branch": branch.name,
+            "action": branch.wait_action,
+            "status": WorkflowState.WAIT.value,
+            "next_owner": branch.next_owner,
+            "resume_condition": branch.resume_condition,
+        }
 
     if branch.dependency == DependencyClass.INDEPENDENT:
-        return WorkflowState.CONTINUE
+        return {
+            "branch": branch.name,
+            "action": branch.continue_action,
+            "status": WorkflowState.CONTINUE.value,
+            "next_owner": branch.next_owner,
+            "resume_condition": branch.resume_condition,
+        }
 
     if (
         branch.dependency == DependencyClass.CONDITIONALLY_DEPENDENT
-        and branch.expected_rework_percent <= MAX_PROVISIONAL_REWORK_PERCENT
+        and branch.expected_rework_percent
+        <= MAX_PROVISIONAL_REWORK_PERCENT
     ):
-        return WorkflowState.PROVISIONAL
+        return {
+            "branch": branch.name,
+            "action": branch.provisional_action,
+            "status": WorkflowState.PROVISIONAL.value,
+            "next_owner": branch.next_owner,
+            "resume_condition": branch.resume_condition,
+        }
 
-    return WorkflowState.WAIT
+    return {
+        "branch": branch.name,
+        "action": branch.wait_action,
+        "status": WorkflowState.WAIT.value,
+        "next_owner": branch.next_owner,
+        "resume_condition": branch.resume_condition,
+    }
 
 
 # ------------------------------------------------------------
 # Q2
-# Competing priorities
+# Human-defined point model for competing priorities
 # ------------------------------------------------------------
+
+def calculate_priority_score(case: PartnerCase) -> dict:
+    """
+    Demonstration scoring model.
+
+    The weights are defined by humans.
+    AI may calculate the score but may not change the model.
+
+    Revenue alone is intentionally not enough to determine priority.
+    """
+
+    revenue_points = case.revenue_at_risk // REVENUE_POINT_UNIT_USD
+
+    evidence_points = (
+        EVIDENCE_COMPLETE_BONUS
+        if case.evidence_complete
+        else 0
+    )
+
+    decision_ready_points = (
+        DECISION_READY_BONUS
+        if case.decision_ready
+        else 0
+    )
+
+    rework_penalty = (
+        case.rework_probability_percent // 10
+    ) * REWORK_PENALTY_PER_10_PERCENT
+
+    total_score = (
+        revenue_points
+        + evidence_points
+        + decision_ready_points
+        - rework_penalty
+    )
+
+    return {
+        "partner": case.name,
+        "revenue_points": revenue_points,
+        "evidence_points": evidence_points,
+        "decision_ready_points": decision_ready_points,
+        "rework_penalty": rework_penalty,
+        "total_score": total_score,
+    }
+
 
 def recommend_partner_priority(
     case_a: PartnerCase,
     case_b: PartnerCase,
-) -> str:
+) -> dict:
     """
-    Simplified recommendation logic for this learning case.
-
-    In a real system, the scoring model and weights must be
-    predefined and approved by humans.
+    AI calculates the approved scores and recommends a priority.
     """
 
-    if (
-        case_b.revenue_at_risk > case_a.revenue_at_risk
-        and case_b.evidence_complete
-        and not case_a.evidence_complete
-    ):
-        return case_b.name
+    score_a = calculate_priority_score(case_a)
+    score_b = calculate_priority_score(case_b)
 
-    return case_a.name
+    if score_a["total_score"] > score_b["total_score"]:
+        recommendation = case_a.name
+    elif score_b["total_score"] > score_a["total_score"]:
+        recommendation = case_b.name
+    else:
+        recommendation = "HUMAN_REVIEW_REQUIRED"
+
+    return {
+        "case_a_score": score_a,
+        "case_b_score": score_b,
+        "recommendation": recommendation,
+    }
 
 
-def delegation_control(
+def apply_delegation_stage(
     stage: DelegationStage,
     recommendation: str,
 ) -> dict:
     """
-    Delegation increases only after reliability has been demonstrated.
+    The Platform Partner Lead defines the current delegation stage.
+
+    Agents may not promote themselves to a higher stage.
     """
 
     if stage == DelegationStage.HUMAN_REVIEW:
@@ -110,6 +199,7 @@ def delegation_control(
             "recommendation": recommendation,
             "human_review_required": True,
             "auto_execution_allowed": False,
+            "next_owner": "PLATFORM_PARTNER_LEAD",
         }
 
     if stage == DelegationStage.PARTIAL_DELEGATION:
@@ -117,12 +207,14 @@ def delegation_control(
             "recommendation": recommendation,
             "human_review_required": True,
             "auto_execution_allowed": False,
+            "next_owner": "PLATFORM_PARTNER_LEAD",
         }
 
     return {
         "recommendation": recommendation,
         "human_review_required": False,
         "auto_execution_allowed": True,
+        "next_owner": "PLATFORM_AGENT",
     }
 
 
@@ -131,36 +223,46 @@ def delegation_control(
 # Cross-functional conflict
 # ------------------------------------------------------------
 
-def handle_sales_escalation(
+def handle_sales_commitment_conflict(
+    partner_name: str,
     signed_commitment_verified: bool,
     formally_escalated_by_sales: bool,
 ) -> dict:
     """
-    Platform does not proactively compensate for missing Sales process.
+    Sales owns its business commitments.
 
-    If Sales formally raises verified evidence that conflicts with
-    the current Platform priority, the conflict is escalated to the
-    predefined decision owner.
+    Platform does not proactively compensate for missing Sales
+    processes or silently override Platform priority.
 
-    The Platform Lead does not silently override the existing process.
+    Once a verified cross-functional conflict is formally raised,
+    the Platform Partner Lead validates and routes the conflict
+    to the predefined Decision Owner.
     """
 
     if signed_commitment_verified and formally_escalated_by_sales:
         return {
+            "partner": partner_name,
             "action": "ESCALATE_CROSS_FUNCTIONAL_CONFLICT",
             "workflow_status": WorkflowState.ESCALATE.value,
-            "next_owner": "EXECUTIVE_DECISION_OWNER",
+            "next_owner": "PLATFORM_PARTNER_LEAD",
+            "decision_owner": "EXECUTIVE_DECISION_OWNER",
             "platform_priority_auto_changed": False,
             "ai_autonomy_reduced": False,
-            "reason": "VERIFIED_CROSS_FUNCTIONAL_PRIORITY_CONFLICT",
+            "resume_condition":
+                "EXECUTIVE_PRIORITY_DECISION_RECORDED",
+            "reason":
+                "VERIFIED_CROSS_FUNCTIONAL_PRIORITY_CONFLICT",
         }
 
     return {
+        "partner": partner_name,
         "action": "KEEP_CURRENT_PLATFORM_PRIORITY",
         "workflow_status": WorkflowState.CONTINUE.value,
         "next_owner": "PLATFORM_AGENT",
+        "decision_owner": None,
         "platform_priority_auto_changed": False,
         "ai_autonomy_reduced": False,
+        "resume_condition": None,
         "reason": "NO_FORMAL_VERIFIED_CONFLICT",
     }
 
@@ -177,62 +279,112 @@ def main():
             name="CAPACITY_REVIEW",
             dependency=DependencyClass.DEPENDENT,
             expected_rework_percent=100,
-            reusable_percent=0,
+            wait_action="WAIT_FOR_CAPACITY_EVIDENCE",
+            provisional_action=None,
+            continue_action="CONTINUE_CAPACITY_REVIEW",
+            next_owner="AGENCY_AGENT",
+            resume_condition="AUTHORITATIVE_DURATION_VERIFIED",
         ),
         Branch(
             name="PERMISSION_SECURITY_CHECK",
             dependency=DependencyClass.CONDITIONALLY_DEPENDENT,
             expected_rework_percent=40,
-            reusable_percent=60,
+            wait_action="WAIT_FOR_PERMISSION_REVIEW",
+            provisional_action="PREPARE_PERMISSION_REVIEW",
+            continue_action="CONTINUE_PERMISSION_REVIEW",
+            next_owner="PLATFORM_AGENT",
+            resume_condition="CAPACITY_CONDITION_CONFIRMED",
         ),
         Branch(
             name="PARTNER_COMMUNICATION",
             dependency=DependencyClass.CONDITIONALLY_DEPENDENT,
-            expected_rework_percent=20,
-            reusable_percent=80,
+            expected_rework_percent=10,
+            wait_action="WAIT_FOR_COMMUNICATION",
+            provisional_action="PREPARE_REUSABLE_COMMUNICATION",
+            continue_action="CONTINUE_COMMUNICATION",
+            next_owner="PLATFORM_AGENT",
+            resume_condition="ENGINEERING_DECISION_CONFIRMED",
+        ),
+        Branch(
+            name="PARTNER_IDENTITY_CHECK",
+            dependency=DependencyClass.INDEPENDENT,
+            expected_rework_percent=0,
+            wait_action="WAIT_FOR_IDENTITY_CHECK",
+            provisional_action=None,
+            continue_action="CONTINUE_INDEPENDENT_CHECK",
+            next_owner="PLATFORM_AGENT",
         ),
     ]
 
     for branch in branches:
-        state = decide_branch_state(branch)
-        print(f"{branch.name}: {state.value}")
+        result = evaluate_branch(branch)
 
-    print("\n=== Q2: Partner Priority ===")
+        print(
+            f"{result['branch']}: "
+            f"{result['action']} "
+            f"({result['status']})"
+        )
+
+    print("\n=== Q2: Competing Partner Priority ===")
 
     partner_a = PartnerCase(
         name="PARTNER_A",
-        revenue_at_risk=50_000,
+        revenue_at_risk=80_000,
         evidence_complete=False,
+        decision_ready=False,
         rework_probability_percent=70,
     )
 
     partner_b = PartnerCase(
         name="PARTNER_B",
-        revenue_at_risk=80_000,
+        revenue_at_risk=50_000,
         evidence_complete=True,
+        decision_ready=True,
         rework_probability_percent=0,
     )
 
-    recommendation = recommend_partner_priority(
+    priority_result = recommend_partner_priority(
         partner_a,
         partner_b,
     )
 
-    delegation = delegation_control(
+    score_a = priority_result["case_a_score"]
+    score_b = priority_result["case_b_score"]
+
+    print(
+        "PARTNER_A score:",
+        score_a["total_score"],
+        score_a,
+    )
+
+    print(
+        "PARTNER_B score:",
+        score_b["total_score"],
+        score_b,
+    )
+
+    recommendation = priority_result["recommendation"]
+
+    delegation = apply_delegation_stage(
         DelegationStage.HUMAN_REVIEW,
         recommendation,
     )
 
     print("AI recommendation:", recommendation)
-    print("Human review required:", delegation["human_review_required"])
+    print(
+        "Human review required:",
+        delegation["human_review_required"],
+    )
     print(
         "Auto execution allowed:",
         delegation["auto_execution_allowed"],
     )
+    print("Next owner:", delegation["next_owner"])
 
     print("\n=== Q3: Sales Conflict ===")
 
-    conflict = handle_sales_escalation(
+    conflict = handle_sales_commitment_conflict(
+        partner_name="PARTNER_A",
         signed_commitment_verified=True,
         formally_escalated_by_sales=True,
     )
