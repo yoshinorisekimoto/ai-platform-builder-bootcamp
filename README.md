@@ -1,6 +1,6 @@
 # AI Platform Builder Bootcamp
 
-*A self-directed learning project — daily case studies, not a production system.
+A self-directed learning project — daily case studies, not a production system.
 
 This repository tracks an ongoing question: in partner-facing work — API integrations, partner prioritization, exception handling, and cross-functional execution — where can AI act safely, and where must a human still decide?
 
@@ -45,10 +45,7 @@ This repository documents both my continuous learning and the development of reu
 
 ## How to Read This Repository
 
-Each daily entry follows a consistent format: a realistic Platform Partnerships
-scenario, the information/permission boundaries applied, the AI's output, and
-a human review checklist. Entries build cumulatively — later cases reuse and
-refine rules established in earlier ones.
+Each daily entry works through a realistic Platform Partnerships scenario and makes the Human-AI boundary explicit: what the AI may do, what it must escalate, and what a human reviews. Earlier entries (Days 1–43) use a scenario-and-checklist format; from Day 44, each entry specifies one stage of the End-to-End Partner Workflow (inputs, rules, stop conditions) and then applies it to a test case. Entries build cumulatively — later cases reuse and refine rules established in earlier ones.
 
 **Recommended reading order for reviewers (5–10 min):**
 1. [Day 30](week07/day30.md) – Why a Human-AI boundary is needed
@@ -70,9 +67,9 @@ A week-by-week overview of the AI Platform Builder Bootcamp.
 | 6 | Commercial planning, stakeholder alignment, and executive decisions | [Days 25–29](LEARNING_JOURNEY.md#week-6) |
 | 7 | Human-AI boundaries and evidence-based escalation | [Days 30–34](LEARNING_JOURNEY.md#week-7) |
 | 8 | Data permission, standard work, and integrated governance | [Days 35–39](LEARNING_JOURNEY.md#week-8) |
-| 9 | Rules v1, Partner intake, and evidence and permission controls  | [Days 40–44](LEARNING_JOURNEY.md#week-9) |
-| 10 | End-to-End Partner Workflow: Clarification, Decision, Communication, and Closure | [Days 45-49](LEARNING_JOURNEY.md#week-10) |
-| 11 | Agent collaboration, exception handling, and Agent-to-Agent prototype | [Week11](LEARNING_JOURNEY.md#week-11)
+| 9 | Rules v1, Partner intake, and evidence and permission controls  | [Days 40–44](LEARNING_JOURNEY.md#week-9)|
+| 10 | End-to-End Partner Workflow: Clarification, Decision, Communication, and Closure | [Days 45–49](LEARNING_JOURNEY.md#week-10) |
+| 11 | Agent collaboration, exception handling, and Agent-to-Agent prototype | [Week 11](LEARNING_JOURNEY.md#week-11)|
 
 [View the complete day-by-day journey](LEARNING_JOURNEY.md)
 
@@ -81,6 +78,5 @@ A week-by-week overview of the AI Platform Builder Bootcamp.
 🚧 Under Development
 
 ### AI-assisted Partner Operations
-Designing reusable AI-assisted workflows for partner operations, evidence validation, and human approval gates.Current daily case studies
-(Day 30–39) feed directly into this project.
+Designing reusable AI-assisted workflows for partner operations, evidence validation, and human approval gates. Current daily case studies feed directly into this project.
 ➡️ [View Project](projects/ai-assisted-partner-operations/)
