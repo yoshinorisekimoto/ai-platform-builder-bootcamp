@@ -136,33 +136,21 @@ A new regulatory requirement becomes mandatory in Japan in 12 months. The consen
 
 The regulatory requirement determines what must be completed. Normal business prioritization may still determine migration sequence inside the allowed window.
 
-### Case 3 — Large Partner Requires Early Planning
-A large Partner already has Engineering work committed for future quarters. The technical change is small, but scheduling, testing, and production coordination require early alignment.
+### Case 3 — Planning Mode Depends on Engineering Lead Time
+Partner A and Partner B have the same requirement. Partner A already has Engineering work committed for future quarters; the change is small, but scheduling, testing, and production coordination need early alignment. Partner B does not need long-range individual planning.
 
 #### Action
 `TRACK_MIGRATION`
 
-- Planning mode: `EARLY_INDIVIDUAL_PLANNING`
+- Planning mode: `EARLY_INDIVIDUAL_PLANNING` (Partner A), `QUARTERLY_MIGRATION_WAVE` (Partner B)
 - Status: `CONTINUE`
 - Next owner: `PLATFORM_AGENT`
 
-The migration plan records the migration owner, required change, target quarter, test date, and production deadline.
+The migration plan records the migration owner, required change, target quarter, test date, and production deadline. The Agent flags any missing item.
 
-Early planning is based on Engineering lead time, not automatically on business tier.
+Planning mode is based on Engineering lead time, not automatically on business tier.
 
-### Case 4 — Standard Partner Uses Migration Wave
-A standard Partner has the same requirement but does not need long-range individual Engineering planning.
-
-#### Action
-`TRACK_MIGRATION`
-
-- Planning mode: `QUARTERLY_MIGRATION_WAVE`
-- Status: `CONTINUE`
-- Next owner: `PLATFORM_AGENT`
-
-The Agent tracks milestones and flags missing ownership, test dates, or production deadlines.
-
-### Case 5 — Partner Requests a One-Month Extension Early
+### Case 4 — Partner Requests a One-Month Extension Early
 Partner X asks to move its Platform deadline one month later. Partner X is not aware of the internal safety buffer, and there is no confirmed reason it cannot meet the standard deadline.
 
 #### Action
@@ -176,7 +164,7 @@ Partner X asks to move its Platform deadline one month later. Partner X is not a
 
 The Agent recommends keeping the standard deadline. The Platform Partner Lead reviews and sends the response to Partner X.
 
-### Case 6 — Partner Later Risks Missing the Platform Deadline
+### Case 5 — Partner Later Risks Missing the Platform Deadline
 Partner X later shows a genuine risk of missing the Platform deadline. The Platform Partner Lead cannot grant the internal buffer.
 
 #### Action
@@ -198,8 +186,7 @@ The Migration Program Owner may approve use of the internal safety buffer. The r
 |---|---|---|
 | Model mismatch caused by missing inputs | `HOLD_MODEL_CHANGE` | PASS |
 | Mandatory regulatory migration identified | `CREATE_MANDATORY_MIGRATION_PROGRAM` | PASS |
-| Large Partner needs early planning | `TRACK_MIGRATION` (`EARLY_INDIVIDUAL_PLANNING`) | PASS |
-| Standard Partner can use migration wave | `TRACK_MIGRATION` (`QUARTERLY_MIGRATION_WAVE`) | PASS |
+| Planning mode follows Engineering lead time | `TRACK_MIGRATION` (`EARLY_INDIVIDUAL_PLANNING` / `QUARTERLY_MIGRATION_WAVE`) | PASS |
 | Early extension request without confirmed need | `KEEP_STANDARD_PLATFORM_DEADLINE` | PASS |
 | Confirmed Platform deadline risk | `ESCALATE_BUFFER_EXCEPTION_REVIEW` | PASS |
 
@@ -225,14 +212,7 @@ Human Review is required when:
 - the internal safety buffer may be used
 
 ### Future Compatibility
-Future Agents may:
-- back-test approved scoring models
-- identify missing model inputs
-- maintain migration trackers
-- detect milestone risk
-- prepare exception records
-
-Agents may not:
+Future Agents may take on more routine execution, but may not:
 - redefine the rubric
 - change model weights
 - waive mandatory regulatory requirements
