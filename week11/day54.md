@@ -170,7 +170,7 @@ Partner X later shows a genuine risk of missing the Platform deadline. The Platf
 #### Action
 `ESCALATE_BUFFER_EXCEPTION_REVIEW`
 
-- Status: `WAIT`
+- Status: `ESCALATE`
 - Extension approved: `False`
 - Next owner: `PLATFORM_PARTNER_LEAD`
 - Decision Owner: `MIGRATION_PROGRAM_OWNER`
