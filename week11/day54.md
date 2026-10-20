@@ -152,3 +152,90 @@ Early planning is based on Engineering lead time, not automatically on business 
 
 ### Case 4 — Standard Partner Uses Migration Wave
 A standard Partner has the same requirement but does not need long-range individual Engineering planning.
+
+#### Action
+`TRACK_MIGRATION`
+
+- Planning mode: `QUARTERLY_MIGRATION_WAVE`
+- Status: `CONTINUE`
+- Next owner: `PLATFORM_AGENT`
+
+The Agent tracks milestones and flags missing ownership, test dates, or production deadlines.
+
+### Case 5 — Partner Requests a One-Month Extension Early
+Partner X asks to move its Platform deadline one month later. Partner X is not aware of the internal safety buffer, and there is no confirmed reason it cannot meet the standard deadline.
+
+#### Action
+`KEEP_STANDARD_PLATFORM_DEADLINE`
+
+- Status: `CONTINUE`
+- Extension approved: `False`
+- Internal buffer disclosed as extension: `False`
+- Next owner: `PLATFORM_PARTNER_LEAD`
+- Reason: `NO_CONFIRMED_NEED_FOR_EXCEPTION`
+
+The Agent recommends keeping the standard deadline. The Platform Partner Lead reviews and sends the response to Partner X.
+
+### Case 6 — Partner Later Risks Missing the Platform Deadline
+Partner X later shows a genuine risk of missing the Platform deadline. The Platform Partner Lead cannot grant the internal buffer.
+
+#### Action
+`ESCALATE_BUFFER_EXCEPTION_REVIEW`
+
+- Status: `WAIT`
+- Extension approved: `False`
+- Next owner: `PLATFORM_PARTNER_LEAD`
+- Decision Owner: `MIGRATION_PROGRAM_OWNER`
+- Compliance review required: `True`
+- Resume Condition: `EXCEPTION_DECISION_RECORDED`
+- Reason: `PLATFORM_DEADLINE_AT_RISK`
+
+The Migration Program Owner may approve use of the internal safety buffer. The regulatory deadline itself cannot be extended.
+
+### Test Result
+
+| Test case | Expected result | Result |
+|---|---|---|
+| Model mismatch caused by missing inputs | `HOLD_MODEL_CHANGE` | PASS |
+| Mandatory regulatory migration identified | `CREATE_MANDATORY_MIGRATION_PROGRAM` | PASS |
+| Large Partner needs early planning | `TRACK_MIGRATION` (`EARLY_INDIVIDUAL_PLANNING`) | PASS |
+| Standard Partner can use migration wave | `TRACK_MIGRATION` (`QUARTERLY_MIGRATION_WAVE`) | PASS |
+| Early extension request without confirmed need | `KEEP_STANDARD_PLATFORM_DEADLINE` | PASS |
+| Confirmed Platform deadline risk | `ESCALATE_BUFFER_EXCEPTION_REVIEW` | PASS |
+
+---
+
+## Governance
+
+### Stage-Specific Audit Requirements
+Record:
+- model version, scoring rubric, and corrected input data
+- back-test results and proposed weight changes
+- Human model-change decision
+- Compliance confirmation of the regulatory requirement
+- Partner migration milestones
+- exception request, Decision Owner, and final outcome
+
+### Human Review Points
+Human Review is required when:
+- scoring rules or weights may change
+- the rubric does not cover the case
+- a Partner requests a deadline change
+- migration risks missing the Platform deadline
+- the internal safety buffer may be used
+
+### Future Compatibility
+Future Agents may:
+- back-test approved scoring models
+- identify missing model inputs
+- maintain migration trackers
+- detect milestone risk
+- prepare exception records
+
+Agents may not:
+- redefine the rubric
+- change model weights
+- waive mandatory regulatory requirements
+- grant use of the internal safety buffer
+
+The target remains controlled delegation: routine execution may increase over time, while governance changes and exceptions remain under Human authority.
