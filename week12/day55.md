@@ -34,7 +34,7 @@ Current Delegation Stage: `HUMAN_REVIEW`.
 - **Platform Engineering** — the Decision Owner for new technical approvals.
 
 ### Composite Requests
-Independent branches are handled as defined in Day 52 and Day 53. An unapproved branch does not block an approved independent branch. Clarification rounds remain limited by `MAX_CLARIFICATION_ROUNDS`.
+Independent branches are handled as defined in [Day 52](../week11/day52.md) and [Day 53](../week11/day53.md). An unapproved branch does not block an approved independent branch. Clarification rounds remain limited by `MAX_CLARIFICATION_ROUNDS`.
 
 ### Information Provenance
 Each material input carries one provenance type:
@@ -45,7 +45,9 @@ Each material input carries one provenance type:
 
 Provenance types are recorded separately and never merged.
 
-An `AGENT_ATTESTATION` does not require separate Evidence by default. It is recorded as an attestation, not as verified data.
+An `AGENT_ATTESTATION` does not require a separate supporting artifact by default.
+
+The attestation itself is recorded as Evidence with its source, Source Owner, context, timestamp, and validation status.
 
 ### Standard Clarification Communication
 The `STANDARD_CLARIFICATION_COMMUNICATION` class may contain the requested rate, endpoint, time window, expected traffic, and the source, timestamp, and provenance of each input.
@@ -120,7 +122,6 @@ The Agency Agent responds for Branch B. The Platform Agent records three inputs,
 |---|---|---|---|
 | Observed peak traffic | `420–470 rpm` | `PLATFORM_TRAFFIC_LOGS` | `VERIFIED_DATA` |
 | Required rate through Q4 | `500 rpm` | `AGENCY_AGENT` | `AGENT_ATTESTATION` |
-| Projected Q4 peak | `480 rpm` | `PLATFORM_AGENT` | `AI_INFERENCE` |
 
 #### Action
 `PREPARE_ENGINEERING_DECISION_INPUT`
@@ -132,7 +133,7 @@ The Agency Agent responds for Branch B. The Platform Agent records three inputs,
 - Next owner: `PLATFORM_ENGINEERING`
 - Decision Owner: `PLATFORM_ENGINEERING`
 
-The Platform Agent does not merge the three inputs into one conclusion.
+The Platform Agent keeps verified Platform data and Partner-side attestation separate.
 
 ### Case 3 — Request Delegation Approval
 Five reviewed cases in the class show `0` missing-field errors, `0` unauthorized commitments, and `0` audit-record errors.
