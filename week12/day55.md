@@ -20,11 +20,9 @@ Current Delegation Stage: `HUMAN_REVIEW`.
 ## Stage Specification
 
 ### Inputs
-- composite Partner requests
-- branch status from earlier stages
+- composite Partner requests and branch status from earlier stages
 - clarification requirements
-- traffic data
-- Partner-side statements
+- traffic data and Partner-side statements
 - source and timestamp of each input
 - communication review history
 - predefined Human Gate topics
@@ -50,12 +48,7 @@ Provenance types are recorded separately and never merged.
 An `AGENT_ATTESTATION` does not require separate Evidence by default. It is recorded as an attestation, not as verified data.
 
 ### Standard Clarification Communication
-The `STANDARD_CLARIFICATION_COMMUNICATION` class may contain:
-- requested rate
-- endpoint
-- time window
-- expected traffic
-- source, timestamp, and provenance
+The `STANDARD_CLARIFICATION_COMMUNICATION` class may contain the requested rate, endpoint, time window, expected traffic, and the source, timestamp, and provenance of each input.
 
 It must not contain any Human Gate topic:
 - `NEW_COMMITMENT`
@@ -64,7 +57,7 @@ It must not contain any Human Gate topic:
 - `CONTRACT_CHANGE`
 
 ### Delegation Rule
-A Delegation Stage can be set for a single communication class. The Current Delegation Stage of the workflow does not change.
+A Delegation Stage can be set for a single communication class, not for one fixed message. The Current Delegation Stage of the workflow does not change.
 
 The class starts in `HUMAN_REVIEW`. The Platform Partner Lead sets `MIN_REVIEWED_CASES = 5` in advance.
 
@@ -74,8 +67,6 @@ When reviewed cases reach `MIN_REVIEWED_CASES` with:
 - no audit-record errors
 
 the Platform Agent requests approval to move the class to `PARTIAL_DELEGATION`. The Platform Partner Lead is the Decision Owner.
-
-Delegation applies to the communication class, not to one fixed message.
 
 If a delegated message fails validation, the class returns to `HUMAN_REVIEW`. Only the Platform Partner Lead can delegate it again.
 
@@ -97,14 +88,11 @@ Stop or return to Human Review when:
 - a delegated message fails validation
 
 ### Workflow
-1. Split independent branches and continue approved ones.
-2. Hold unapproved branches and request clarification from the Agency Agent.
-3. Record provenance for each material input.
-4. Prepare complete decision input for Platform Engineering.
-5. Route clarification through Human Review until delegation is approved.
-6. Request delegation approval when `MIN_REVIEWED_CASES` is met.
-7. Send standard clarification directly inside the Delegation Boundary.
-8. Return Human Gate topics and failed validations to Human Review.
+1. Continue approved branches and hold unapproved branches for clarification.
+2. Record provenance for each material input and prepare decision input for Platform Engineering.
+3. Route clarification through Human Review until delegation is approved.
+4. Request delegation approval when `MIN_REVIEWED_CASES` is met.
+5. After approval, send standard clarification directly and return Human Gate topics and failed validations to Human Review.
 
 ---
 
@@ -125,18 +113,14 @@ Partner X requests two independent branches:
 - Pre-Send Review: `PLATFORM_PARTNER_LEAD`
 - Resume Condition: Platform Engineering decides on Branch B.
 
-Branch B does not block Branch A.
-
 ### Case 2 — Agent-to-Agent Clarification
-The Agency Agent responds for Branch B. The Platform Agent records three inputs:
+The Agency Agent responds for Branch B. The Platform Agent records three inputs, each with a timestamp:
 
 | Input | Value | Source | Provenance |
 |---|---|---|---|
 | Observed peak traffic | `420–470 rpm` | `PLATFORM_TRAFFIC_LOGS` | `VERIFIED_DATA` |
 | Required rate through Q4 | `500 rpm` | `AGENCY_AGENT` | `AGENT_ATTESTATION` |
 | Projected Q4 peak | `480 rpm` | `PLATFORM_AGENT` | `AI_INFERENCE` |
-
-Each input has a recorded timestamp.
 
 #### Action
 `PREPARE_ENGINEERING_DECISION_INPUT`
@@ -151,10 +135,7 @@ Each input has a recorded timestamp.
 The Platform Agent does not merge the three inputs into one conclusion.
 
 ### Case 3 — Request Delegation Approval
-Five clarification cases in the class have been reviewed:
-- `0` missing-field errors
-- `0` unauthorized commitments
-- `0` audit-record errors
+Five reviewed cases in the class show `0` missing-field errors, `0` unauthorized commitments, and `0` audit-record errors.
 
 #### Action
 `REQUEST_DELEGATION_APPROVAL`
@@ -225,11 +206,7 @@ Human Review is required when:
 - a delegated message fails validation
 
 ### Future Compatibility
-Future Agents may:
-- exchange standard clarification directly
-- validate required fields
-- record provenance
-- prepare Engineering decision inputs
+Future Agents may exchange standard clarification, validate required fields, record provenance, and prepare Engineering decision inputs without per-message review.
 
 The Platform Partner Lead continues to:
 - define communication classes and allowed fields
