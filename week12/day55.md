@@ -34,11 +34,8 @@ Current Delegation Stage: `HUMAN_REVIEW`.
 - **Platform Engineering** — the Decision Owner for new technical approvals.
 
 ### Composite Requests
-Independent branches are handled as defined in [Day 52](../week11/day52.md) and [Day 53](../week11/day53.md).
-
-An unapproved branch does not block an approved independent branch.
-
-Clarification rounds remain limited by `MAX_CLARIFICATION_ROUNDS`.
+### Composite Requests
+Independent branches follow [Day 52](../week11/day52.md) and [Day 53](../week11/day53.md): unresolved branches do not block independent approved work, and clarification remains bounded by `MAX_CLARIFICATION_ROUNDS`.
 
 ### Information Provenance
 Each material input carries one provenance type:
@@ -53,7 +50,7 @@ An `AGENT_ATTESTATION` does not require a separate supporting artifact by defaul
 
 The attestation itself is recorded as Evidence with its source, Source Owner, context, timestamp, and validation status.
 
-### Engineering Input Clarification
+
 Standard clarification under the Day 51 standing authorization is unchanged; this is a new class.
 
 The `ENGINEERING_INPUT_CLARIFICATION` class collects structured information required for a Platform Engineering decision.
@@ -74,34 +71,26 @@ It must not contain any Human Gate topic:
 - `RISK_ACCEPTANCE`
 - `CONTRACT_CHANGE`
 
-### Delegation Rule
-A Delegation Stage can be set for a communication class, not for one fixed message.
+### Engineering Input Clarification
+Day 51 standard clarification remains unchanged.
 
-The workflow itself remains in `HUMAN_REVIEW`.
+`ENGINEERING_INPUT_CLARIFICATION` is a new communication class for collecting structured Engineering-decision inputs, including rate, endpoint, time window, expected traffic, source, timestamp, and provenance.
 
-A new `ENGINEERING_INPUT_CLARIFICATION` class begins in `HUMAN_REVIEW`.
+It must not include:
+- `NEW_COMMITMENT`
+- `EXCEPTION_APPROVAL`
+- `RISK_ACCEPTANCE`
+- `CONTRACT_CHANGE`
 
-The Platform Partner Lead sets the minimum validation requirement in advance:
+The class begins in `HUMAN_REVIEW`.
 
-`MIN_REVIEWED_CASES = 5`
+The Platform Partner Lead sets `MIN_REVIEWED_CASES = 5` in advance and remains the Decision Owner for delegation.
 
-When reviewed cases reach `MIN_REVIEWED_CASES` with:
+After five reviewed cases with no missing fields, unauthorized commitments, or audit-record errors, the Platform Agent may request `PARTIAL_DELEGATION`.
 
-- no missing required fields
-- no unauthorized commitments
-- no audit-record errors
+The Agent cannot change its own Delegation Stage.
 
-the Platform Agent may request delegation approval.
-
-The Platform Agent does not change the class Delegation Stage.
-
-The Platform Partner Lead is the Decision Owner for moving the class to `PARTIAL_DELEGATION`.
-
-After approval, messages inside the approved Delegation Boundary no longer require per-message Human Review.
-
-If a delegated message fails validation, the class returns to `HUMAN_REVIEW`.
-
-Only the Platform Partner Lead may approve delegation again.
+A validation failure returns the class to `HUMAN_REVIEW`.
 
 ### Outputs
 - branch status
@@ -122,14 +111,11 @@ Stop or return to Human Review when:
 - a delegated message fails validation
 
 ### Workflow
-1. Continue approved branches and hold unapproved branches for clarification.
-2. Collect required Engineering-input clarification from the Agency Agent.
-3. Record source, timestamp, and provenance for each material input.
-4. Prepare structured decision input for Platform Engineering.
-5. Route the new communication class through Human Review until delegation criteria are met.
-6. Request delegation approval from the Platform Partner Lead.
-7. After approval, send Engineering-input clarification directly inside the Delegation Boundary.
-8. Return Human Gate topics and failed validations to Human Review.
+1. Continue approved branches and hold unresolved branches.
+2. Collect Engineering-input clarification from the Agency Agent.
+3. Record source, timestamp, provenance, and validation status.
+4. Prepare the Engineering decision input.
+5. After Human-approved delegation, automate in-boundary communication and return exceptions to Human Review.
 
 ---
 
@@ -180,28 +166,18 @@ The Platform Agent keeps verified Platform data and Partner-side attestation sep
 It does not convert an `AGENT_ATTESTATION` into `VERIFIED_DATA`.
 
 ### Case 3 — Request Delegation Approval
-Five reviewed cases in the `ENGINEERING_INPUT_CLARIFICATION` class show:
-
-- `0` missing-field errors
-- `0` unauthorized commitments
-- `0` audit-record errors
-
-The human-defined minimum is:
-
-`MIN_REVIEWED_CASES = 5`
+Five reviewed `ENGINEERING_INPUT_CLARIFICATION` cases meet the Human-defined `MIN_REVIEWED_CASES = 5` threshold with no missing-field, unauthorized-commitment, or audit-record errors.
 
 #### Action
 `REQUEST_DELEGATION_APPROVAL`
 
-- Communication Class: `ENGINEERING_INPUT_CLARIFICATION`
-- Reviewed Cases: `5`
 - Requested Stage: `PARTIAL_DELEGATION`
 - Next owner: `PLATFORM_PARTNER_LEAD`
 - Decision Owner: `PLATFORM_PARTNER_LEAD`
 
-The Platform Agent does not change the class Delegation Stage itself.
+The Agent requests delegation but cannot approve it.
 
-After Human approval, the class moves to `PARTIAL_DELEGATION`.
+
 
 ### Case 4 — Engineering Input Clarification After Delegation
 A later request contains only information inside the approved Delegation Boundary.
@@ -253,32 +229,19 @@ Only this request returns to Human Review.
 
 ### Stage-Specific Audit Requirements
 Record:
-
-- request branch and branch status
-- clarification request and required fields
-- source, Source Owner, timestamp, provenance type, and validation status of each material input
-- Human review history
+- branch and clarification status
+- source, Source Owner, timestamp, provenance, and validation status
 - delegation request and decision
-- Human Gate detections
-- validation failures and class returns to `HUMAN_REVIEW`
+- Human Gate detections and validation failures
 
 ### Human Review Points
 Human Review is required when:
-
-- a new communication class is introduced
-- the Delegation Boundary changes
+- a new communication class or Delegation Boundary is introduced or changed
 - provenance is unclear
 - delegation approval is requested
-- a Human Gate topic appears
-- a delegated message fails validation
+- a Human Gate topic or validation failure occurs
 
 ### Future Compatibility
 Future Agents may exchange `ENGINEERING_INPUT_CLARIFICATION`, validate required fields, record provenance, and prepare Engineering decision inputs without per-message review.
 
-The Platform Partner Lead continues to:
-
-- define communication classes
-- define the Delegation Boundary
-- define Human Gate topics
-- set delegation criteria, including `MIN_REVIEWED_CASES`
-- approve or withdraw delegation
+The Platform Partner Lead continues to define the Delegation Boundary, Human Gate topics, delegation criteria, and delegation approval.
