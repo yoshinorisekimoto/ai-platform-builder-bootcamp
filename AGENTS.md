@@ -140,7 +140,8 @@ The Delegation Boundary is defined and approved in advance by the Platform Partn
 
 Actions listed under Auto may be executed without case-by-case human approval.
 
-Standard clarification with the Agency Agent is allowed under this standing authorization.New communication classes begin in `HUMAN_REVIEW` and may enter delegated execution only after the Platform Partner Lead approves the class-specific Delegation Boundary.
+Standard clarification with the Agency Agent is allowed under this standing authorization.
+New communication classes begin in `HUMAN_REVIEW` and may enter delegated execution only after the Platform Partner Lead approves the class-specific Delegation Boundary.
 
 Human approval is still required for external commitments, exception approval, final technical decisions, and unresolved high-risk cases.
 

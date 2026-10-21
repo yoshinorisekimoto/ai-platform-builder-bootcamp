@@ -34,7 +34,6 @@ Current Delegation Stage: `HUMAN_REVIEW`.
 - **Platform Engineering** — the Decision Owner for new technical approvals.
 
 ### Composite Requests
-### Composite Requests
 Independent branches follow [Day 52](../week11/day52.md) and [Day 53](../week11/day53.md): unresolved branches do not block independent approved work, and clarification remains bounded by `MAX_CLARIFICATION_ROUNDS`.
 
 ### Information Provenance
@@ -49,27 +48,6 @@ Provenance types are recorded separately and never merged.
 An `AGENT_ATTESTATION` does not require a separate supporting artifact by default.
 
 The attestation itself is recorded as Evidence with its source, Source Owner, context, timestamp, and validation status.
-
-
-Standard clarification under the Day 51 standing authorization is unchanged; this is a new class.
-
-The `ENGINEERING_INPUT_CLARIFICATION` class collects structured information required for a Platform Engineering decision.
-
-It may contain:
-- requested rate
-- endpoint
-- time window
-- expected traffic
-- source
-- timestamp
-- provenance of each material input
-
-It must not contain any Human Gate topic:
-
-- `NEW_COMMITMENT`
-- `EXCEPTION_APPROVAL`
-- `RISK_ACCEPTANCE`
-- `CONTRACT_CHANGE`
 
 ### Engineering Input Clarification
 Day 51 standard clarification remains unchanged.
@@ -176,8 +154,6 @@ Five reviewed `ENGINEERING_INPUT_CLARIFICATION` cases meet the Human-defined `MI
 - Decision Owner: `PLATFORM_PARTNER_LEAD`
 
 The Agent requests delegation but cannot approve it.
-
-
 
 ### Case 4 — Engineering Input Clarification After Delegation
 A later request contains only information inside the approved Delegation Boundary.
