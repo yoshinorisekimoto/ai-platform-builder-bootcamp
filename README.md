@@ -70,6 +70,7 @@ A week-by-week overview of the AI Platform Builder Bootcamp.
 | 9 | Rules v1, Partner intake, and evidence and permission controls  | [Days 40–44](LEARNING_JOURNEY.md#week-9)|
 | 10 | End-to-End Partner Workflow: Clarification, Decision, Communication, and Closure | [Days 45–49](LEARNING_JOURNEY.md#week-10) |
 | 11 | Delegation, clarification limits, prioritization, and model governance | [Days 50–54](LEARNING_JOURNEY.md#week-11) |
+| 12 | Agent-to-Agent clarification and evidence reconciliation | [Week 12](LEARNING_JOURNEY.md#week-12) |
 
 [View the complete day-by-day journey](LEARNING_JOURNEY.md)
 
