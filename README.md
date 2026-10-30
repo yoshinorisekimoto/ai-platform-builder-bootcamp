@@ -46,7 +46,7 @@ This repository documents both my continuous learning and the development of reu
 
 ## How to Read This Repository
 
-Each daily entry works through a realistic Platform Partnerships scenario and makes the Human-AI boundary explicit: what the AI may do, what it must escalate, and what a human reviews. Earlier entries (Days 1–43) use a scenario-and-checklist format; from Day 44, each entry specifies one stage of the End-to-End Partner Workflow (inputs, rules, stop conditions) and then applies it to a test case. Entries build cumulatively — later cases reuse and refine rules established in earlier ones.From Day 51, a Platform Agent and a partner-side Agency Agent work together inside a Delegation Boundary pre-approved by the Platform Partner Lead.
+Each daily entry works through a realistic Platform Partnerships scenario and makes the Human-AI boundary explicit: what the AI may do, what it must escalate, and what a human reviews. Earlier entries (Days 1–43) use a scenario-and-checklist format; from Day 44, each entry specifies one stage of the End-to-End Partner Workflow (inputs, rules, stop conditions) and then applies it to a test case. Entries build cumulatively — later cases reuse and refine rules established in earlier ones. From Day 51, a Platform Agent and a partner-side Agency Agent work together inside a Delegation Boundary pre-approved by the Platform Partner Lead.
 
 **Recommended reading order for reviewers (5–10 min):**
 1. [Day 30](week07/day30.md) – Why a Human-AI boundary is needed
