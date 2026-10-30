@@ -14,7 +14,7 @@ See the [Bootcamp Roadmap](ROADMAP.md) for the Day 30–120 direction and milest
 Milestones are directional and may evolve as the project develops.
 
 ## Featured Case Studies
-These case studies explore practical partnership decisions, including partner exceptions, platform stability vs. speed, executive decision support, and human-AI responsibility boundaries.
+These case studies explore practical partnership decisions, including partner exceptions, platform stability vs. speed, executive decision support, human-AI responsibility boundaries, and Agent-to-Agent evidence reconciliation.
 
 - [Day 23 - Strategic Partner Exception vs Platform Standardization](week05/day23.md)
 - [Day 28 - Balancing Platform Stability and Commercial Speed](week06/day28.md)
@@ -22,6 +22,7 @@ These case studies explore practical partnership decisions, including partner ex
 - [Day 32 - Applying Agent Rules to a Standard API Request](week07/day32.md)
 - [Day 35 - Minimum Information and Permission](week08/day35.md)
 - [Day 53 - Priority-Aware Parallel Workflow Control](week11/day53.md)
+- [Day 56 - Agent-to-Agent Evidence Reconciliation](week12/day56.md)
 
 ## Why
 This repository documents both my continuous learning and the development of reusable assets for platform design, partner operations, and AI-assisted workflows.
@@ -45,7 +46,7 @@ This repository documents both my continuous learning and the development of reu
 
 ## How to Read This Repository
 
-Each daily entry works through a realistic Platform Partnerships scenario and makes the Human-AI boundary explicit: what the AI may do, what it must escalate, and what a human reviews. Earlier entries (Days 1–43) use a scenario-and-checklist format; from Day 44, each entry specifies one stage of the End-to-End Partner Workflow (inputs, rules, stop conditions) and then applies it to a test case. Entries build cumulatively — later cases reuse and refine rules established in earlier ones.
+Each daily entry works through a realistic Platform Partnerships scenario and makes the Human-AI boundary explicit: what the AI may do, what it must escalate, and what a human reviews. Earlier entries (Days 1–43) use a scenario-and-checklist format; from Day 44, each entry specifies one stage of the End-to-End Partner Workflow (inputs, rules, stop conditions) and then applies it to a test case. Entries build cumulatively — later cases reuse and refine rules established in earlier ones.From Day 51, a Platform Agent and a partner-side Agency Agent work together inside a Delegation Boundary pre-approved by the Platform Partner Lead.
 
 **Recommended reading order for reviewers (5–10 min):**
 1. [Day 30](week07/day30.md) – Why a Human-AI boundary is needed
