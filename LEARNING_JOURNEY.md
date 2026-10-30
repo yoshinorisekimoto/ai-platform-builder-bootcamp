@@ -78,3 +78,4 @@ This document contains the complete day-by-day record of the AI Platform Builder
 - [Day 55 – Agent-to-Agent Clarification and Communication Standardization](week12/day55.md)
 - [Day 56 – Agent-to-Agent Evidence Reconciliation](week12/day56.md)
 - [Day 57 – Agent Communication Failure and Business Continuity](week12/day57.md)
+- [Day 58 – Agent-to-Agent Partner Requirements Alignment](week12/day58.md)
