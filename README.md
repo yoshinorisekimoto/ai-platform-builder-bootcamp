@@ -34,9 +34,6 @@ These case studies explore practical partnership decisions, including partner ex
 - [Day 53 - Priority-Aware Parallel Workflow Control](week11/day53.md)
 - [Day 56 - Agent-to-Agent Evidence Reconciliation](week12/day56.md)
 
-## Why
-This repository documents both my continuous learning and the development of reusable assets for platform design, partner operations, and AI-assisted workflows.
-
 ## Topics
 - AI Agent Workflows
 - Platform Partnerships
