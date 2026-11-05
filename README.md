@@ -8,6 +8,16 @@ Each case study works through a realistic partnership scenario. AI structures th
 
 See the [Agent Operating Rules](AGENTS.md) for the current Human-AI responsibility boundaries.
 
+## How to Read This Repository
+Each daily entry works through ...(本文はそのまま)... pre-approved by the Platform Partner Lead.
+
+**Recommended reading order for reviewers (5–10 min):**
+
+1. Day 30 – Why a Human-AI boundary is needed
+2. Day 32 – How the boundary is applied to a standard case
+3. Day 40 – The formalized Rules v1 (where Days 30–39 converge)
+4. Day 50 – Rules v1 in practice: a full workflow with controlled AI autonomy
+
 ## Project Roadmap
 
 See the [Bootcamp Roadmap](ROADMAP.md) for the Day 30–120 direction and milestones.
@@ -35,7 +45,6 @@ This repository documents both my continuous learning and the development of reu
 - AI Governance
 - Python
 - GitHub
-- AWS
 
 ## Goals
 - Build reusable platform frameworks.
@@ -43,16 +52,6 @@ This repository documents both my continuous learning and the development of reu
 - Explore API integration and cloud architecture.
 - Create portfolio-ready projects.
 - Continuously improve through practical experiments.
-
-## How to Read This Repository
-
-Each daily entry works through a realistic Platform Partnerships scenario and makes the Human-AI boundary explicit: what the AI may do, what it must escalate, and what a human reviews. Earlier entries (Days 1–43) use a scenario-and-checklist format; from Day 44, each entry specifies one stage of the End-to-End Partner Workflow (inputs, rules, stop conditions) and then applies it to a test case. Entries build cumulatively — later cases reuse and refine rules established in earlier ones. From Day 51, a Platform Agent and a partner-side Agency Agent work together inside a Delegation Boundary pre-approved by the Platform Partner Lead.
-
-**Recommended reading order for reviewers (5–10 min):**
-1. [Day 30](week07/day30.md) – Why a Human-AI boundary is needed
-2. [Day 32](week07/day32.md) – How the boundary is applied to a standard case
-3. [Day 40](week09/day40.md) – The formalized Rules v1 (where Days 30–39 converge)
-4. [Day 50](week11/day50.md) – Rules v1 in practice: a full workflow with controlled AI autonomy
 
 ## Learning Journey
 
