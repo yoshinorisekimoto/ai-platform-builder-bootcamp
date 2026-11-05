@@ -2,11 +2,9 @@
 
 I believe partner work is about to change: AI agents on the platform side and the partner side will soon work with each other directly. This self-directed bootcamp is how I am learning what that means in practice, and how I am searching for repeatable patterns that any partner team can standardize and scale. Everything here is built from daily case studies, not a production system.
 
-The ongoing question is this: in partner-facing work — API integrations, partner prioritization, exception handling, and cross-functional execution — where can AI act safely, and where must a human still decide?
+The ongoing question is this: in partner-facing work, such as API integrations, partner prioritization, exception handling, and cross-functional execution, where can AI act safely, and where must a human still decide?
 
-Each case study works through a realistic partnership scenario. AI structures the evidence and handles approved standard work; judgment, accountability, and trust-building stay with the person.
-
-See the [Agent Operating Rules](AGENTS.md) for the current Human-AI responsibility boundaries.
+Each case study works through a realistic partnership scenario. AI structures the evidence and handles approved standard work; judgment, accountability, and trust-building stay with humans.
 
 See the [Agent Operating Rules](AGENTS.md) for the current Human-AI responsibility boundaries.
 
